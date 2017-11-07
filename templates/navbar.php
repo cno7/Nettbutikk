@@ -39,7 +39,7 @@
           <input class="form-control mr-sm-2" type="text" placeholder="Search" size="40">
           <button class="btn btn-info" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
         </form>
-        <ul class="navbar-nav navbar-right">
+        <ul class="navbar-nav navbar-right d-none d-md-block">
           <li class="nav-item">
             <a class="nav-link" href="cart.php"><img src="images/cart.jpg" class="img-fluid" id="imgCart"></a>
           </li>
