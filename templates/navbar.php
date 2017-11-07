@@ -20,10 +20,10 @@
             <a class="dropdown-item" href="#">Item 2</a>
           </div>
         </div>
-      </ul>
+      </div>
     </div>
   </nav>
-  <div class="jumbotron navbar navbar-expand-md navbar-light" id="headerJumbo">
+  <div class="navbar navbar-expand-md navbar-light" id="headerJumbo">
     <div class="container">
       <a class="navbar-brand" href="index.php"><h2>Bedrift</h2></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,8 +36,14 @@
           </li>
         </ul>
         <form class="form-inline mr-auto">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" size="40">
-          <button class="btn btn-info" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+          <div class="form-group">
+            <div class="input-group">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search" size="40">
+              <div class="input-group-btn">
+                <button class="btn btn-info" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+              </div>
+            </div>
+          </div>
         </form>
         <ul class="navbar-nav navbar-right d-none d-md-block">
           <li class="nav-item">
@@ -47,4 +53,19 @@
       </div>
     </div>
   </div>
+  <nav class="navbar navbar-light navbar-expand-md">
+    <div class="container">
+      <div class="navbar-nav ml-5">
+        <div class="btn-group mr-4">
+          <button type="button" class="btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Products
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Log in</a>
+            <a class="dropdown-item" href="#">Register</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
 </header>

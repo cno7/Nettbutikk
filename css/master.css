@@ -4,7 +4,6 @@ body{
 
 
 main{
-  margin-top:-32px;
   height:4000px; /* To see scrolling */
   background: linear-gradient(red, yellow);
 }
@@ -19,8 +18,8 @@ main{
 }
 
 #headerJumbo{
-  height:100px !important;
   border-radius: 0px;
+  padding-bottom:
 }
 
 #imgCart{
