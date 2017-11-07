@@ -33,7 +33,7 @@
       </div>
     </div>
   <div class="col-sm-12">
-    <p>KollB Services. B.R.A. Veien 6B. 1783 Halden. Tel 45454545</p>
+    <p>KollB Services. B.R.A. Veien 6C. 1783 Halden. Tel 45454545</p>
     <p>Copyright 2017 KollB.no. All rights reserved.</p>
   </div>
   </div>
