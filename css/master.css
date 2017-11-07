@@ -1,9 +1,6 @@
-nav{
-    height:40px;
-}
 
 main{
-  margin-top:128px;
+  margin-top:-32px;
   height:4000px; /* To see scrolling */
   background: linear-gradient(red, yellow);
 }
