@@ -50,10 +50,32 @@
             <a class="nav-link" href="cart.php"><img src="images/cart.jpg" class="img-fluid" id="imgCart"></a>
           </li>
         </ul>
+        <div class="navbar-nav ml-auto d-block d-md-none">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="test.php">Log in</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="test.php">Register</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="test.php">Contact us</a>
+            </li>
+          </ul>
+          <div class="btn-group mr-4">
+            <button type="button" class="btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Products
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Log in</a>
+              <a class="dropdown-item" href="#">Register</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <nav class="navbar navbar-light navbar-expand-md">
+  <nav class="navbar navbar-light navbar-expand-md d-none d-md-block">
     <div class="container">
       <div class="navbar-nav ml-5">
         <div class="btn-group mr-4">
