@@ -1,0 +1,31 @@
+nav{
+    height:40px;
+}
+
+main{
+  margin-top:128px;
+  height:4000px; /* To see scrolling */
+  background: linear-gradient(red, yellow);
+}
+
+.navbar{
+  background-color: orange;
+}
+
+.dropdown-menu {
+    width: auto !important;
+    min-width: auto !important;
+}
+
+#headerJumbo{
+  height:100px !important;
+  border-radius: 0px;
+}
+
+#imgCart{
+  border: 2px solid transparent;
+}
+
+#imgCart:hover{
+  border: 2px solid black;
+}
