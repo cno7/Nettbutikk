@@ -1,20 +1,40 @@
+/* Tags */
 body{
   overflow-y: scroll;
 }
 
-
 main{
   height:4000px; /* To see scrolling */
-  background: linear-gradient(red, yellow);
+  background: linear-gradient(#d12121, #9e1919);
 }
 
+/* Classes */
 .navbar{
-  background-color: orange;
+  background-color: #e02323;
 }
 
 .dropdown-menu {
     width: auto !important;
     min-width: auto !important;
+}
+
+.btn-top{
+  width:100px;
+  height: 30px;
+  border-radius: 0px;
+  background-color:#ce2121;
+  color:#f7f7f7;
+}
+
+.btn-top:hover{
+  background-color:#9e1919;
+  color:#e7e7e7;
+}
+
+/* ID's */
+
+#pageTitle{
+    color:#e7e7e7;
 }
 
 #headerJumbo{
@@ -28,4 +48,15 @@ main{
 
 #imgCart:hover{
   border: 2px solid black;
+}
+
+#btn-products{
+  width:100px;
+  height: 30px;
+  border-radius: 0px;
+  background-color:#e7e7e7;
+}
+
+#btn-products:hover{
+  background-color:#c7c7c7;
 }
