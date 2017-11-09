@@ -27,7 +27,7 @@
     <div class="container">
       <a class="navbar-brand" href="index.php" id="pageTitle"><h1>Lefdal</h1></a>
       <div class="ml-auto mr-4 d-block d-md-none">
-        <img src="images/products.jpg">
+        <a href="#" data-toggle="collapse" data-target="#productsMenu"><img src="images/products.jpg"></a>
       </div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -72,11 +72,11 @@
       </div>
     </div>
   </div>
-  <nav class="navbar navbar-light navbar-expand-md d-none d-md-block">
+  <nav class="navbar navbar-light navbar-expand-md">
     <div class="container">
       <div class="navbar-nav ml-5">
-        <div class="btn-group mr-4 ">
-          <button type="button" class="btn btn-sm dropdown-toggle" id="btn-products" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div class="btn-group mr-4 d-none d-md-block">
+          <button type="button" class="btn btn-sm dropdown-toggle btn-products" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Products
           </button>
           <div class="dropdown-menu">

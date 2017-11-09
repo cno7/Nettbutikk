@@ -31,6 +31,17 @@ main{
   color:#e7e7e7;
 }
 
+.btn-products{
+  width:100px;
+  height: 30px;
+  border-radius: 0px;
+  background-color:#e7e7e7;
+}
+
+.btn-products:hover{
+  background-color:#c7c7c7;
+}
+
 /* ID's */
 
 #pageTitle{
@@ -50,13 +61,10 @@ main{
   border: 2px solid black;
 }
 
-#btn-products{
-  width:100px;
-  height: 30px;
-  border-radius: 0px;
-  background-color:#e7e7e7;
-}
-
-#btn-products:hover{
-  background-color:#c7c7c7;
+#productsMenu {
+  background: hsla(0,0%,100%,.93);
+  position: absolute;
+  right: 0;
+  left: 0;
+  min-height: 100%;
 }
