@@ -72,10 +72,10 @@
       </div>
     </div>
   </div>
-  <nav class="navbar navbar-light navbar-expand-md">
+  <nav class="navbar navbar-light navbar-expand-md d-none d-md-block">
     <div class="container">
       <div class="navbar-nav ml-5">
-        <div class="btn-group mr-4 d-none d-md-block">
+        <div class="btn-group mr-4">
           <button type="button" class="btn btn-sm dropdown-toggle btn-products" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Products
           </button>

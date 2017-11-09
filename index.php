@@ -16,17 +16,11 @@
       <div id="productsMenu" class="panel panel-default panel-collapse collapse d-md-none">
         <div class="container">
           <ul class="nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Active</a>
+            <li class="nav-item nav-prod">
+              <a class="nav-link" href="urge.php">Sukkerfri Urge</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
+            <li class="nav-item nav-prod">
+              <a class="nav-link" href="annet.php">Annet</a>
             </li>
           </ul>
         </div>
