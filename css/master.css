@@ -13,12 +13,21 @@ main{
   background-color: #e02323;
 }
 
-.dropdown-menu {
+.dropdown-menu{
     width: auto !important;
     min-width: auto !important;
 }
 
-.btn-top{
+.dropdown-menu a:hover{
+  background-color:#e7e7e7;
+}
+
+.btn:focus{
+  outline:none;
+  box-shadow:none;
+}
+
+.btn-dropdown{
   width:100px;
   height: 30px;
   border-radius: 0px;
@@ -26,20 +35,19 @@ main{
   color:#f7f7f7;
 }
 
-.btn-top:hover{
+.btn-dropdown:hover{
   background-color:#9e1919;
   color:#e7e7e7;
 }
 
-.btn-products{
-  width:100px;
-  height: 30px;
-  border-radius: 0px;
-  background-color:#e7e7e7;
+.btn-dropdown:focus{
+  background-color:#f7f7f7;
+  color:#ce2121;
 }
 
-.btn-products:hover{
-  background-color:#c7c7c7;
+.btn-search:hover{
+  background-color:#f7f7f7;
+  color:#ce2121;
 }
 
 .nav-prod{
@@ -49,6 +57,11 @@ main{
 
 .nav-prod a{
   color: black;
+}
+
+.navbar-toggler:focus{
+  background-color:#f7f7f7;
+  color:#ce2121;
 }
 
 /* ID's */
@@ -70,10 +83,14 @@ main{
   border: 2px solid black;
 }
 
-#productsMenu {
+#productsMenu{
   background: hsla(0,0%,100%,.93);
   position: absolute;
   right: 0;
   left: 0;
   min-height: 100%;
+}
+
+#prodDropdown a{
+  min-width:300px;
 }

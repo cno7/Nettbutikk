@@ -1,9 +1,10 @@
 <header>
+  <!-- Top navbar -->
   <nav class="navbar navbar-light navbar-expand-md d-none d-md-block">
     <div class="container">
       <div class="navbar-nav ml-auto">
         <div class="btn-group mr-4">
-          <button type="button" class="btn btn-sm btn-top dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button type="button" class="btn btn-sm btn-dropdown dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             User
           </button>
           <div class="dropdown-menu">
@@ -12,7 +13,7 @@
           </div>
         </div>
         <div class="btn-group">
-          <button type="button" class="btn btn-sm btn-top dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button type="button" class="btn btn-sm btn-dropdown dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Contact
           </button>
           <div class="dropdown-menu">
@@ -23,6 +24,7 @@
       </div>
     </div>
   </nav>
+  <!-- Main navbar -->
   <div class="navbar navbar-expand-md navbar-light" id="headerJumbo">
     <div class="container">
       <a class="navbar-brand" href="index.php" id="pageTitle"><h1>Lefdal</h1></a>
@@ -72,14 +74,15 @@
       </div>
     </div>
   </div>
+  <!-- Products navbar -->
   <nav class="navbar navbar-light navbar-expand-md d-none d-md-block">
     <div class="container">
       <div class="navbar-nav ml-5">
         <div class="btn-group mr-4">
-          <button type="button" class="btn btn-sm dropdown-toggle btn-products" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button type="button" class="btn btn-sm dropdown-toggle btn-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Products
           </button>
-          <div class="dropdown-menu">
+          <div class="dropdown-menu" id="prodDropdown">
             <a class="dropdown-item" href="#">Sukkerfri Urge</a>
             <a class="dropdown-item" href="#">Annet</a>
           </div>
