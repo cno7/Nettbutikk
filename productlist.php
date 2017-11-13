@@ -27,6 +27,7 @@
       </div>
       <!-- End of products menu for mobile -->
       <!-- Sample Product listing -->
+      <h1>Products</h1>
       <div class="container products-row py-2">
         <div class="row">
           <div class="col-2">
