@@ -26,8 +26,8 @@
         </div>
       </div>
       <!-- End of products menu for mobile -->
-      <!-- Sample Product listing -->
       <h1>Products</h1>
+      <!-- Sample product listing -->
       <div class="container products-row py-2">
         <div class="row">
           <div class="col-4 col-sm-3 col-md-2 pr-0 pr-sm-1">
@@ -47,6 +47,7 @@
           </div>
         </div>
       </div>
+      <!-- End of sample product listing -->
     </main>
 
     <!--Scripts-->
