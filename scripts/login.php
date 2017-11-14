@@ -1,32 +1,29 @@
 <?php
 session_start();
 require_once 'db_connecter.php';
-$error = "";
 
-if (isset($_POST['submit'])) {
-  if (empty($_POST['mail']) || empty($_POST['password'])) {
-    $error = "Username or Password is invalid";
-  }
-  else {
     $username = $_POST["mail"];
     $password = $_POST["password"];
-    /*
-    // To protect MySQL injection for Security purpose
-    $username = stripslashes($username);
-    $password = stripslashes($password);
-    $username = mysql_real_escape_string($username);
-    $password = mysql_real_escape_string($password);
-    */
-    $query = mysql_query("select * from login where password='$pwd' AND username='$email'", $connection);
-    $rows = mysql_num_rows($query);
-    if ($rows == 1) {
-      $_SESSION['login_user']=$username; // Initializing Session
-      header("location: ./index.php"); // Redirecting To Other Page
+
+    $sql = "SELECT * FROM users WHERE email='$username'";
+    //executing query, storing result
+    $result = mysqli_query($link, $sql);
+    if(!$row = mysqli_fetch_assoc($result)){
+      $_SESSION['error']= "No user with that name!";
+    } else {
+      //verifying if password matches hash
+      if(password_verify($password, $row['pwd'])){
+        //assossiative array with session id, is unique for all users
+        $_SESSION['id'] = $row['id'];
+        $_SESSION['phone'] = $row['phone'];
+        $_SESSION['fname'] = $row['fname'];
+        $_SESSION['lname'] = $row['lname'];
+        $_SESSION['email'] = $row['email'];
+      }
     }
-    else {
-      $error = "Username or Password is invalid";
-    }
-  }
-}
+
+    //return user to index.php
+    header("Location: ../index.php");
+
 
  ?>
