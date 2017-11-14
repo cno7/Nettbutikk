@@ -8,7 +8,7 @@
             User
           </button>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Log in</a>
+            <a class="dropdown-item" href="./login_page.php">Log in</a>
             <a class="dropdown-item" href="#">Register</a>
           </div>
         </div>
