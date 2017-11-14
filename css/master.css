@@ -83,6 +83,10 @@ main{
   object-fit: contain;
 }
 
+.img-thumbnail{
+  max-width:75%;
+}
+
 /* ID's */
 
 #pageTitle{
