@@ -42,7 +42,7 @@
             <h4>100,-</h4>
             <form action="#" method="post">
               <input type="number" name="quantity" value="1" class="form-control form-control-sm col-8 col-sm-6 col-lg-4" />
-              <button type="submit" class="btn btn-danger mt-2 btn-sm">Add to cart</button>
+              <button type="submit" class="btn btn-danger mt-2 btn-sm p-1 py-sm-1 px-sm-2">Add to cart</button>
             </form>
           </div>
         </div>
