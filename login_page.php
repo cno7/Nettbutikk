@@ -1,7 +1,6 @@
 <?php
-include('scripts/login.php');
-
-?>
+  session_start();
+ ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -17,6 +16,10 @@ include('scripts/login.php');
        <br />
        <button type="submit">Login</button>
      </form>
-
+     <p><?php
+     if (isset($_SESSION['error'])) {
+       echo $_SESSION['error'];
+     }
+      ?></p>
   </body>
 </html>

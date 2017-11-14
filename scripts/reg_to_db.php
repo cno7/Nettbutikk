@@ -15,11 +15,13 @@
   $result_check = mysqli_query($link, $sql_check);
   if(mysqli_fetch_assoc($result_check)){
     echo "Email allready in use";
+    header("Location: ../index.php");
   }
   else {
     $hash_pwd = password_hash($pwd, PASSWORD_BCRYPT);
     $sql = "INSERT INTO `users`(`fname`, `lname`, `address`, `zipcode`, `city`, `phone`, `email`, `pwd`, `usergroup`) VALUES ('$fname', '$lname', '$address', '$zipcode', '$city', '$phone', '$email', '$hash_pwd', '$uGroup')";
     $result = mysqli_query($link, $sql);
+    header("Location: ../index.php");
   }
 
 

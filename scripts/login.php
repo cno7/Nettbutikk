@@ -9,7 +9,8 @@ require_once 'db_connecter.php';
     //executing query, storing result
     $result = mysqli_query($link, $sql);
     if(!$row = mysqli_fetch_assoc($result)){
-      $_SESSION['error']= "No user with that name!";
+      $_SESSION['error']= "blabla";
+
     } else {
       //verifying if password matches hash
       if(password_verify($password, $row['pwd'])){

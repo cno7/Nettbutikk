@@ -6,7 +6,7 @@
   </head>
   <body>
     <h3>Register account</h3>
-    <form action="reg_to_db.php" method="post">
+    <form action="scripts/reg_to_db.php" method="post">
        <input type="text" name="fname" placeholder="Firstname">
        <br />
        <input type="text" name="lname" placeholder="Lastname">
@@ -25,6 +25,5 @@
        <br />
        <button type="submit">Register</button>
      </form>
-
   </body>
 </html>
