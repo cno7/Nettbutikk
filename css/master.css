@@ -77,6 +77,12 @@ main{
   font-size: 14px;
 }
 
+.carousel1{
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+}
+
 /* ID's */
 
 #pageTitle{
