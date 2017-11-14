@@ -1,5 +1,7 @@
+<?php
+include('scripts/login.php');
 
-
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -8,7 +10,7 @@
   </head>
   <body>
     <h3>Enter email and password</h3>
-    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+    <form action="scripts/login.php" method="post">
        <input type="text" name="mail" placeholder="email">
        <br />
        <input type="password" name="password">
