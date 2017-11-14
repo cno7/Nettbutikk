@@ -30,105 +30,21 @@
       <h1>Products</h1>
       <div class="container products-row py-2">
         <div class="row">
-          <div class="col-2">
+          <div class="col-2 col-sm-2">
             <img src="images/product_placeholder.jpg" class="img-fluid img-thumbnail">
           </div>
-          <div class="col-6">
-            <h2>Eple</h2>
+          <div class="col-sm-6 col-md-8">
+            <h3>Eple</h3>
             <p class="products-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis rhoncus risus at tristique.</p>
             <br>
             <p>Stock: 10stk</p>
           </div>
-          <div class="col-3 ml-auto">
+          <div class="col-sm-4 col-md-2 ml-auto">
             <br>
             <h4>100,-</h4>
             <form action="#" method="post">
-              <input type="number" name="quantity" value="1" class="form-control form-control-sm col-sm-6 col-lg-3" />
-              <button type="submit" class="btn btn-danger mt-2">Add to cart</button>
-            </form>
-          </div>
-        </div>
-      </div>
-      <div class="container products-row py-2">
-        <div class="row">
-          <div class="col-2">
-            <img src="images/product_placeholder.jpg" class="img-fluid img-thumbnail">
-          </div>
-          <div class="col-6">
-            <h2>Eple</h2>
-            <p class="products-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis rhoncus risus at tristique.</p>
-            <br>
-            <p>Stock: 10stk</p>
-          </div>
-          <div class="col-3 ml-auto">
-            <br>
-            <h4>100,-</h4>
-            <form action="#" method="post">
-              <input type="number" name="quantity" value="1" class="form-control form-control-sm col-sm-6 col-lg-3" />
-              <button type="submit" class="btn btn-danger mt-2">Add to cart</button>
-            </form>
-          </div>
-        </div>
-      </div>
-      <div class="container products-row py-2">
-        <div class="row">
-          <div class="col-2">
-            <img src="images/product_placeholder.jpg" class="img-fluid img-thumbnail">
-          </div>
-          <div class="col-6">
-            <h2>Eple</h2>
-            <p class="products-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis rhoncus risus at tristique.</p>
-            <br>
-            <p>Stock: 10stk</p>
-          </div>
-          <div class="col-3 ml-auto">
-            <br>
-            <h4>100,-</h4>
-            <form action="#" method="post">
-              <input type="number" name="quantity" value="1" class="form-control form-control-sm col-sm-6 col-lg-3" />
-              <button type="submit" class="btn btn-danger mt-2">Add to cart</button>
-            </form>
-          </div>
-        </div>
-      </div>
-      <div class="container products-row py-2">
-        <div class="row">
-          <div class="col-2">
-            <img src="images/product_placeholder.jpg" class="img-fluid img-thumbnail">
-          </div>
-          <div class="col-6">
-            <h2>Eple</h2>
-            <p class="products-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis rhoncus risus at tristique.</p>
-            <br>
-            <p>Stock: 10stk</p>
-          </div>
-          <div class="col-3 ml-auto">
-            <br>
-            <h4>100,-</h4>
-            <form action="#" method="post">
-              <input type="number" name="quantity" value="1" class="form-control form-control-sm col-sm-6 col-lg-3" />
-              <button type="submit" class="btn btn-danger mt-2">Add to cart</button>
-            </form>
-          </div>
-        </div>
-      </div>
-      <div class="container products-row py-2">
-        <div class="row">
-          <div class="col-2">
-            <img src="images/product_placeholder.jpg" class="img-fluid img-thumbnail">
-          </div>
-          <div class="col-6">
-            <h2>Eple</h2>
-            <p class="products-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis rhoncus risus at tristique.</p>
-            <br>
-            <p>Stock: 10stk</p>
-          </div>
-          <div class="col-3 ml-auto">
-            <br>
-            <h4>100,-</h4>
-            <form action="#" method="post">
-              <input type="number" name="quantity" value="1" class="form-control form-control-sm col-sm-6 col-lg-3" />
-              <button type="submit" class="btn btn-danger mt-2">Add to cart</button>
+              <input type="number" name="quantity" value="1" class="form-control form-control-sm col-sm-6 col-lg-4" />
+              <button type="submit" class="btn btn-danger mt-2 btn-sm">Add to cart</button>
             </form>
           </div>
         </div>
