@@ -8,8 +8,16 @@
             User
           </button>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="./login_page.php">Log in</a>
-            <a class="dropdown-item" href="user_registration">Register</a>
+            <?php
+            if(isset($_SESSION['email'])){
+              echo  '<a class="dropdown-item" href="scripts/logout.php">Logout</a>';
+              echo '<a class="dropdown-item" href="user_registration">Register</a>';
+            }
+            else {
+            echo '<a class="dropdown-item" href="./login_page.php">Log in</a>';
+            echo '<a class="dropdown-item" href="user_registration">Register</a>';
+            }
+            ?>
           </div>
         </div>
         <div class="btn-group">

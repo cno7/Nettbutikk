@@ -26,7 +26,6 @@ require_once 'db_connecter.php';
         $_SESSION['city'] = $row['city'];
         $_SESSION['usergroup'] = $row['usergroup'];
       }
-      }
     }
 
     //return user to index.php
