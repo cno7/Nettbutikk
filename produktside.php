@@ -15,12 +15,10 @@
     <?php include 'templates/navbar.php'; ?>
         <div class="container"><!-- Main div to encapsule the others -->
             <div class="row"><!-- Top: Div to encapsule the image div and short-info-text div -->
-                <div class="col col-4 red"><!-- Image div -->
-                    <div class="col">
-                        <img alt="Product" class="imgProduct" src="placeholder.jpg" />
-                    </div>
+                <div class="col-4 col-sm-4"><!-- Image div -->
+                    <img alt="Responsive image" class="img-responsive center-block imgProduct" src="placeholder.jpg" />
                 </div>
-                <div class="col col-8 blue"><!-- Short-info-text div -->
+                <div class="col-6 col-sm-6"><!-- Short-info-text div -->
                     <h3 id="lblProductName">Apple</h3>
                     <ul>
                         <li>
@@ -36,14 +34,27 @@
                             They grow on trees!
                         </li>
                     </ul>
+                  </div>
+                <div class="col-2 col-sm-2 priceField">
+                    <h5>Price:</h5>
+                    <span id="productPrice">100</span> kr,-
+                    </br>
+                    </br>
+                    <button type="button" onclick="decreaseBuyAmount();" class="upDown" name="btnDecrease" id="btnDecrease"><b>-</b></button>
                     <input type="number" class="inpBuyAmount" id="inpBuyAmount" min="1" value="1" />
-                    <button type="button" class="btnBuy" name="btnBuy" id="btnBuy">Add to cart</button>
+                    <button type="button" onclick="increaseBuyAmount();" class="upDown" name="btnIncrease" id="btnIncrease"><b>+</b></button>
+                    </br>
+                    </br>
+                    <button type="button" onclick="addToCart();" class="btnBuy" name="btnBuy" id="btnBuy">Add to cart</button>
+                    </br>
+                    </br>
+                    <p>In stock: <span id="productStock">10</span> stk.</p>
+                    <span id="addedToCart"></span>
                 </div>
             </div>
-            <div class="row tab green"><!-- Middle: Div for the more detailed description and more -->
-              <button class="tablinks" onclick="openTab(event, 'productDetails')" id="defaultOpen">Details</button>
-              <button class="tablinks" onclick="openTab(event, 'productQuestions')" id="questionsTab">Questions & Answers</button>
-              <button class="tablinks" onclick="openTab(event, 'productReview')" id="reviewTab">Customer Review</button>
+            <div class="row tab"><!-- Middle: Div for the more detailed description and more -->
+              <button class="tablinks" onclick="openTab(event, 'productDetails')" id="defaultOpen">Product Info</button>
+              <button class="tablinks" onclick="openTab(event, 'productQuestions')" id="questionsTab">Specifications</button>
             </div>
             <div class="col tabcontent" id="productDetails">
               <h4>Apple</h4>
@@ -56,16 +67,6 @@
               <p>What is an apple?</p>
               <h5>Answer:</h5>
               <p>An apple is a fruit.</p>
-            </div>
-            <div class="col tabcontent" id="productReview">
-              <h4>Customer reviews</h4>
-              <p>Best apples ever!<i> - Happy customer</i></p>
-            </div>
-            <div class="row yellow"><!-- Bottom: Div for similar products etc.  -->
-              <div class="col">
-                <h4>Similar products</h4>
-                <p>Some boxes with simliar products here.</p>
-              </div>
             </div>
         </div>
         <script src="script.js"></script>

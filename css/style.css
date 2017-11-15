@@ -1,15 +1,21 @@
 .btnBuy {
-    position: absolute;
-    width: 100px;
+    position: relative;
+    width: 119px;
     height: 60px;
-    top: 0;
-    right: 0;
 }
 .inpBuyAmount {
-    position: absolute;
-    top: 15px;
-    right: 100px;
+    position: relative;
     width: 50px;
+}
+.upDown{
+  width: 30px;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.priceField{
+    text-align: left;
 }
 .red {
     border: 1px solid red;
@@ -22,10 +28,10 @@
 }
 .yellow {
     border: 1px solid yellow;
+    text-align: center;
 }
 .imgProduct {
-    width: 300px;
-    height: 300px;
+    max-height: 300px;
 }
 /* Code borrowed from w3schools. Probably change it so it become our own design */
 /* Style the tab */
