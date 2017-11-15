@@ -20,6 +20,9 @@
      if (isset($_SESSION['error'])) {
        echo $_SESSION['error'];
      }
+     else{
+       echo "";
+     }
       ?></p>
   </body>
 </html>

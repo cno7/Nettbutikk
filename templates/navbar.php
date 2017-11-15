@@ -11,11 +11,11 @@
             <?php
             if(isset($_SESSION['email'])){
               echo  '<a class="dropdown-item" href="scripts/logout.php">Logout</a>';
-              echo '<a class="dropdown-item" href="user_registration">Register</a>';
+              echo '<a class="dropdown-item" href="user_registration.php">Register</a>';
             }
             else {
             echo '<a class="dropdown-item" href="./login_page.php">Log in</a>';
-            echo '<a class="dropdown-item" href="user_registration">Register</a>';
+            echo '<a class="dropdown-item" href="user_registration.php">Register</a>';
             }
             ?>
           </div>

@@ -9,8 +9,8 @@ require_once 'db_connecter.php';
     //executing query, storing result
     $result = mysqli_query($link, $sql);
     if(!$row = mysqli_fetch_assoc($result)){
-      $_SESSION['error']= "blabla";
-
+      $_SESSION['error']= "Feil brukernavn eller passord";
+      header("Location: ../login_page.php");
     }
     else {
       //verifying if password matches hash
@@ -25,11 +25,11 @@ require_once 'db_connecter.php';
         $_SESSION['zipCode'] = $row['zipCode'];
         $_SESSION['city'] = $row['city'];
         $_SESSION['usergroup'] = $row['usergroup'];
+        //return user to index.php
+        header("Location: ../index.php");
       }
     }
 
-    //return user to index.php
-    header("Location: ../index.php");
 
 
  ?>
