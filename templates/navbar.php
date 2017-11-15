@@ -93,7 +93,7 @@
           </button>
           <div class="dropdown-menu" id="prodDropdown">
             <a class="dropdown-item" href="productlist.php?type=Frukt">Sukkerfri Urge</a>
-            <a class="dropdown-item" href="#">Annet</a>
+            <a class="dropdown-item" href="productlist.php?type=Bær">Annet</a>
           </div>
         </div>
       </div>
