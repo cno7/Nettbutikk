@@ -9,7 +9,7 @@
           </button>
           <div class="dropdown-menu">
             <a class="dropdown-item" href="./login_page.php">Log in</a>
-            <a class="dropdown-item" href="#">Register</a>
+            <a class="dropdown-item" href="user_registration">Register</a>
           </div>
         </div>
         <div class="btn-group">

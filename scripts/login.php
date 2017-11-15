@@ -11,7 +11,8 @@ require_once 'db_connecter.php';
     if(!$row = mysqli_fetch_assoc($result)){
       $_SESSION['error']= "blabla";
 
-    } else {
+    }
+    else {
       //verifying if password matches hash
       if(password_verify($password, $row['pwd'])){
         //assossiative array with session id, is unique for all users
