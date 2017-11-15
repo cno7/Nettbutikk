@@ -9,7 +9,3 @@ define('DB_NAME', 'webshop_db');
 $link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
 
 ?>
-
-
-
-<!--include 'db_connecter.php' denne må addes til toppen av sider som skal bruke db-->
