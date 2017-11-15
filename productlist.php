@@ -75,7 +75,7 @@ while ($row = mysqli_fetch_assoc($result)) {
           <div class="container products-row py-2">
             <div class="row">
               <div class="col-4 col-sm-3 col-md-2 pr-0 pr-sm-1">
-                <img src="'.$products[$i]['picture_name'].'" class="img-thumbnail img-products">
+                <img src="images/'.$products[$i]['picture_name'].'" class="img-thumbnail img-products">
               </div>
               <div class="col-4 col-sm-5 col-md-8 pl-0 pl-sm-1">
                 <h3>'.$products[$i]['itemname'].'</h3>
