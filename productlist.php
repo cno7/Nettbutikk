@@ -1,3 +1,23 @@
+<?php
+
+include 'scripts/db_connecter.php';
+
+if(!isset($_GET['type'])){
+  header('Location: index.php');
+}
+session_start();
+$type=$_GET['type'];
+
+$products=array();
+
+$sql = "SELECT * FROM items WHERE type='$type'";
+$result = mysqli_query($link, $sql);
+while ($row = mysqli_fetch_assoc($result)) {
+  array_push($products, $row);
+}
+
+ ?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -27,7 +47,7 @@
       </div>
       <!-- End of products menu for mobile -->
       <h1>Products</h1>
-      <!-- Sample product listing -->
+      <!-- Sample product listing
       <div class="container products-row py-2">
         <div class="row">
           <div class="col-4 col-sm-3 col-md-2 pr-0 pr-sm-1">
@@ -47,14 +67,40 @@
           </div>
         </div>
       </div>
-      <!-- End of sample product listing -->
+        End of sample product listing -->
+        <?php
+        for ($i=0; $i < sizeof($products) ; $i++) {
+          echo
+          '
+          <div class="container products-row py-2">
+            <div class="row">
+              <div class="col-4 col-sm-3 col-md-2 pr-0 pr-sm-1">
+                <img src="'.$products[$i]['picture_name'].'" class="img-thumbnail img-products">
+              </div>
+              <div class="col-4 col-sm-5 col-md-8 pl-0 pl-sm-1">
+                <h3>'.$products[$i]['itemname'].'</h3>
+                <p class="products-description text-truncate">'.$products[$i]['description'].'</p>
+                <p>Stock: '.$products[$i]['quantity'].'</p>
+              </div>
+              <div class="col-4 col-sm-4 col-md-2">
+                <h4>'.$products[$i]['out_price'].'$</h4>
+                <form action="#" method="post">
+                  <input type="number" name="quantity" value="1" class="form-control form-control-sm col-8 col-sm-6 col-lg-4" />
+                  <input type="hidden" name="itemcode" value="'.$products[$i]['picture_name'].'">
+                  <button type="submit" class="btn btn-danger mt-2 btn-sm p-1 py-sm-1 px-sm-2">Add to cart</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          ';
+        }
+         ?>
     </main>
 
     <!--Scripts-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    <script src="jq.js">
     </script>
     <?php include 'templates/footer.php'; ?>
   </body>
