@@ -87,6 +87,14 @@ main{
   max-width:75%;
 }
 
+.order-item{
+  background-color: #e4e4e4;
+}
+
+.order-item a{
+  color:black;
+}
+
 /* ID's */
 
 #pageTitle{
