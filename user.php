@@ -27,18 +27,17 @@
         </div>
       </div>
       <!-- End of products menu for mobile -->
-      <h4 class="ml-3">Dan Børge Akerø</h4 >
+      <h2 class="ml-3 pt-3">Dan Børge Akerø</h2>
       <div class="row mt-3">
         <div class="col-12 col-lg-6">
           <div class="ml-5">
-            <h3>Profile page</h3>
+            <h4>My Information</h4>
             <h6>Customer ID: 12345</h6>
             <h6>Name: Dan Børge Akerø</h6>
             <h6>Email: dan.børge@kerø.no</h6>
             <h6>Phone: 12345678</h6>
             <h6>Adress: Gjørmevegen 7</h6>
             <h6>Zipcode: 5465 Halden</h6>
-            <h6>Password: ole123</h6>
             <div class="col-7 float-right">
               <form action="my_page.php" class="form-inline ml-5 mt-5">
                 <button type="submit" class="btn btn-danger">Edit info</button>
@@ -49,7 +48,13 @@
         <div class="col-12 col-lg-6">
           <h3>Order history</h3>
           <ul class="nav flex-column">
-            <li class="order-item nav-item">
+            <li class="order-item nav-item mt-1">
+              <a class="nav-link" href="urge.php">Orderno: 128371982 &emsp; Date: 24.12.2017 &emsp; Price: 60000,-</a>
+            </li>
+            <li class="order-item nav-item mt-1">
+              <a class="nav-link" href="urge.php">Orderno: 128371982 &emsp; Date: 24.12.2017 &emsp; Price: 60000,-</a>
+            </li>
+            <li class="order-item nav-item mt-1">
               <a class="nav-link" href="urge.php">Orderno: 128371982 &emsp; Date: 24.12.2017 &emsp; Price: 60000,-</a>
             </li>
           </ul>
