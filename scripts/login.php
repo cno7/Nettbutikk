@@ -21,7 +21,7 @@ require_once 'db_connecter.php';
         $_SESSION['fname'] = $row['fname'];
         $_SESSION['lname'] = $row['lname'];
         $_SESSION['email'] = $row['email'];
-        $_SESSION['adress'] = $row['adress'];
+        $_SESSION['address'] = $row['address'];
         $_SESSION['zipCode'] = $row['zipCode'];
         $_SESSION['city'] = $row['city'];
         $_SESSION['usergroup'] = $row['usergroup'];

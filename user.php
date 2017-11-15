@@ -31,17 +31,24 @@
         </div>
       </div>
       <!-- End of products menu for mobile -->
-      <h2 class="ml-3 pt-3">Dan Børge Akerø</h2>
+      <h2 class="ml-3 pt-3"><?php echo $_SESSION['fname'].' '.$_SESSION['lname']; ?></h2>
       <div class="row mt-3">
         <div class="col-12 col-lg-6">
           <div class="ml-5">
-            <h4>My Information</h4>
-            <h6>Customer ID: 12345</h6>
-            <h6>Name: Dan Børge Akerø</h6>
-            <h6>Email: dan.børge@kerø.no</h6>
-            <h6>Phone: 12345678</h6>
-            <h6>Adress: Gjørmevegen 7</h6>
-            <h6>Zipcode: 5465 Halden</h6>
+            <?php
+            echo '<h4>My Information</h4>';
+            echo '<h6>Customer ID: '.$_SESSION['id'].'</h6>';
+            echo '<h6>Name: '.$_SESSION['fname'].' '.$_SESSION['lname'].'</h6>';
+            echo '<h6>Email: '.$_SESSION['email'].'</h6>';
+            echo '<h6>Phone: '.$_SESSION['phone'].'</h6>';
+            echo '<h6>Adress: '.$_SESSION['address'].'</h6>';
+            echo '<h6>Zipcode: '.$_SESSION['zipCode'].' '.$_SESSION['city'].'</h6>';
+            if($_SESSION['usergroup']==2){
+              echo '<br />';
+              echo '<a href="admin.php">Admin page</a>';
+            }
+            ?>
+
             <div class="col-7 float-right">
               <form action="my_page.php" class="form-inline ml-5 mt-5">
                 <button type="submit" class="btn btn-danger">Edit info</button>
