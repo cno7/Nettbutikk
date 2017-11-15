@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
     <!-- Custom ccs and javascript. NOT a part of bootstrap -->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!--<link rel="stylesheet" type="text/css" href="css/style.css" />-->
     <link rel="stylesheet" href="css/master.css">
     <title>Nettbutikk</title>
   </head>
@@ -17,43 +17,45 @@
         <div class="row">
           <div class="col col-8">
               <h3>Registrer shit her</h3>
-              Itemcode:
-              <input type="text" name="" value="">
-              </br>
-              Itemname:
-              <input type="text" name="" value="">
-              </br>
-              Quantity:
-              <input type="text" name="" value="">
-              </br>
-              Description:
-              <input type="text" name="" value="">
-              </br>
-              Amount Sold:
-              <input type="text" name="" value="">
-              </br>
-              Producer:
-              <input type="text" name="" value="">
-              </br>
-              Type:
-              <input type="text" name="" value="">
-              </br>
-              In Price:
-              <input type="text" name="" value="">
-              </br>
-              Out Price:
-              <input type="text" name="" value="">
-              </br>
-              Gross Profit:
-              <input type="text" name="" value="">
-              </br>
-              Profit:
-              <input type="text" name="" value="">
-              </br>
-              Picture Name:
-              <input type="text" name="" value="">
-              </br>
-              <button type="button" name="button">Add item to database</button>
+              <form class="" action="scripts/reg_product_db.php" method="post">
+                  Itemcode:
+                  <input type="text" name="item_code" value="">
+                  </br>
+                  Itemname:
+                  <input type="text" name="item_name" value="">
+                  </br>
+                  Quantity:
+                  <input type="text" name="quantity" value="">
+                  </br>
+                  Description:
+                  <input type="text" name="description" value="">
+                  </br>
+                  Amount Sold:
+                  <input type="number" name="amount_sold" min="0" value="0">
+                  </br>
+                  Producer:
+                  <input type="text" name="producer" value="">
+                  </br>
+                  Type:
+                  <input type="text" name="type" value="">
+                  </br>
+                  In Price:
+                  <input type="number" name="in_price" min="0" value="">
+                  </br>
+                  Out Price:
+                  <input type="number" name="out_price" min="0" value="">
+                  </br>
+                  Gross Profit:
+                  <input type="number" name="gross_profit" min="0" value="">
+                  </br>
+                  Profit:
+                  <input type="number" name="profit" min="0" value="">
+                  </br>
+                  Picture Name:
+                  <input type="text" name="picture_name" value="">
+                  </br>
+                  <button type="submit" name="button">Add item to database</button>
+              </form>
           </div>
           <div class="col col-4">
               Oversikt over varer som er registrert her i en liste

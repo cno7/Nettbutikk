@@ -16,7 +16,7 @@
         <div class="container"><!-- Main div to encapsule the others -->
             <div class="row"><!-- Top: Div to encapsule the image div and short-info-text div -->
                 <div class="col-4 col-sm-4"><!-- Image div -->
-                    <img alt="Responsive image" class="img-responsive center-block imgProduct" src="placeholder.jpg" />
+                    <img alt="Responsive image" class="img-responsive center-block imgProduct" src="images/product_placeholder.jpg" />
                 </div>
                 <div class="col-6 col-sm-6"><!-- Short-info-text div -->
                     <h3 id="lblProductName">Apple</h3>
@@ -49,7 +49,7 @@
                     </br>
                     </br>
                     <p>In stock: <span id="productStock">10</span> stk.</p>
-                    <span id="addedToCart"></span>
+                    <span id="addedToCart">&nbsp;</span>
                 </div>
             </div>
             <div class="row tab"><!-- Middle: Div for the more detailed description and more -->
@@ -69,7 +69,7 @@
               <p>An apple is a fruit.</p>
             </div>
         </div>
-        <script src="script.js"></script>
+        <script src="scripts/script.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
