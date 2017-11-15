@@ -10,7 +10,7 @@
           <div class="dropdown-menu">
             <?php
             if(isset($_SESSION['email'])){
-              echo  '<a class="dropdown-item" href="scripts/log out.php">Log out</a>';
+              echo  '<a class="dropdown-item" href="scripts/logout.php">Log out</a>';
               echo '<a class="dropdown-item" href="user_registration.php">Register</a>';
               echo '<a class="dropdown-item" href="my_page.php">My page</a>';
             }
