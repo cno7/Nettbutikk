@@ -1,16 +1,23 @@
 <?php
 
 include 'scripts/db_connecter.php';
-
-if(!isset($_GET['type'])){
-  header('Location: index.php');
-}
 session_start();
-$type=$_GET['type'];
-
 $products=array();
 
-$sql = "SELECT * FROM items WHERE type='$type'";
+//Checks for parameteres from request
+if (isset($_GET['type'])) {
+  $type=$_GET['type'];
+  $sql = "SELECT * FROM items WHERE type='$type'";
+}
+elseif (isset($_GET['producer'])) {
+  $producer=$_GET['producer'];
+  $sql = "SELECT * FROM items WHERE producer='$producer'";
+}
+else {
+  header('Location: index.php');
+}
+
+//Get result from DB and add it to products array
 $result = mysqli_query($link, $sql);
 while ($row = mysqli_fetch_assoc($result)) {
   array_push($products, $row);
@@ -69,6 +76,7 @@ while ($row = mysqli_fetch_assoc($result)) {
       </div>
         End of sample product listing -->
         <?php
+        //Add all products as a row on page
         for ($i=0; $i < sizeof($products) ; $i++) {
           echo
           '
