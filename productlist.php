@@ -14,9 +14,15 @@ elseif (isset($_GET['producer'])) {
   $sql = "SELECT * FROM items WHERE producer='$producer'";
 }
 //Search function, matches itemcode, itemname, description, producer or type
+//Matches query anywhere in db columns
 elseif (isset($_GET['query'])) {
   $query=$_GET['query'];
-  $sql = "SELECT * FROM items WHERE '$query' IN (itemcode, itemname, description, producer, type)";
+  $sql = "SELECT * FROM items
+  WHERE itemcode LIKE '%$query%'
+  OR itemname LIKE '%$query%'
+  OR description LIKE '%$query%'
+  OR producer LIKE '%$query%'
+  OR type LIKE '%$query%'";
 }
 else {
   header('Location: index.php');
