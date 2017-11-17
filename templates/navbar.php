@@ -12,7 +12,7 @@
             if(isset($_SESSION['email'])){
               echo  '<a class="dropdown-item" href="scripts/logout.php">Log out</a>';
               echo '<a class="dropdown-item" href="user_registration.php">Register</a>';
-              echo '<a class="dropdown-item" href="my_page.php">My page</a>';
+              echo '<a class="dropdown-item" href="user.php">My page</a>';
             }
             else {
             echo '<a class="dropdown-item" href="./login_page.php">Log in</a>';
@@ -92,8 +92,8 @@
             Products
           </button>
           <div class="dropdown-menu" id="prodDropdown">
-            <a class="dropdown-item" href="productlist.php?type=Frukt">Sukkerfri Urge</a>
-            <a class="dropdown-item" href="productlist.php?type=Bær">Annet</a>
+            <a class="dropdown-item" href="productlist.php?type=Frukt">Frukt</a>
+            <a class="dropdown-item" href="productlist.php?type=Bær">Bær</a>
           </div>
         </div>
       </div>
