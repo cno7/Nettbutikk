@@ -13,6 +13,11 @@ elseif (isset($_GET['producer'])) {
   $producer=$_GET['producer'];
   $sql = "SELECT * FROM items WHERE producer='$producer'";
 }
+//Search function, matches itemcode, itemname, description, producer or type
+elseif (isset($_GET['query'])) {
+  $query=$_GET['query'];
+  $sql = "SELECT * FROM items WHERE '$query' IN (itemcode, itemname, description, producer, type)";
+}
 else {
   header('Location: index.php');
 }

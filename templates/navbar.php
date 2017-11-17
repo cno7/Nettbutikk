@@ -49,10 +49,10 @@
             <a class="nav-link" href="test.php"></a>
           </li>
         </ul>
-        <form class="form-inline mr-auto">
+        <form action="productlist.php" method="get" class="form-inline mr-auto">
           <div class="form-group">
             <div class="input-group">
-              <input class="form-control mr-sm-2" type="text" placeholder="Search for products" size="40">
+              <input class="form-control mr-sm-2" type="text" name="query" placeholder="Search for products" size="40">
               <div class="input-group-btn">
                 <button class="btn btn-search" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
               </div>
