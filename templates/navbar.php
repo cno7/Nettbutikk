@@ -2,6 +2,13 @@
   <!-- Top navbar -->
   <nav class="navbar navbar-light navbar-expand-md d-none d-md-block">
     <div class="container">
+      <div class="mr-auto top-text">
+        <?php
+          if (isset($_SESSION['id'])) {
+            echo "Logged in as: ".$_SESSION['fname']." ".$_SESSION['lname'];
+          }
+         ?>
+      </div>
       <div class="navbar-nav ml-auto">
         <div class="btn-group mr-4">
           <button type="button" class="btn btn-sm btn-dropdown dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -15,7 +22,7 @@
               echo '<a class="dropdown-item" href="user.php">My page</a>';
             }
             else {
-            echo '<a class="dropdown-item" href="./login_page.php">Log in</a>';
+            echo '<a href="#" class="dropdown-item" data-toggle="modal" data-target="#loginMenu">Log In</a>';
             echo '<a class="dropdown-item" href="user_registration.php">Register</a>';
             }
             ?>
@@ -100,3 +107,39 @@
     </div>
   </nav>
 </header>
+<!-- Login menu-->
+<div id="loginMenu" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Log in</h4>
+      </div>
+      <div class="modal-body">
+        <form action="scripts/login.php" method="post">
+          <div class="form-group">
+            <label>Email Address</label>
+            <input class="form-control" type="text" name="mail" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label>Password</label>
+            <input class="form-control" type="password" placeholder="Password" name="password">
+          </div>
+          <div class="form-group">
+            <button class="btn btn-danger" type="submit">Login</button>
+          </div>
+         </form>
+         <p><?php
+         if (isset($_SESSION['error'])) {
+           echo $_SESSION['error'];
+         }
+         else{
+           echo "";
+         }
+          ?></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

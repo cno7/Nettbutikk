@@ -27,7 +27,6 @@
         </div>
       </div>
       <!-- End of products menu for mobile -->
-
         <!-- Main Carousel -->
         <div id="mainCarousel" class="carousel slide text-center" data-ride="carousel">
           <h2>Highlights</h2>

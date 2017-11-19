@@ -10,7 +10,7 @@ require_once 'db_connecter.php';
     $result = mysqli_query($link, $sql);
     if(!$row = mysqli_fetch_assoc($result)){
       $_SESSION['error']= "Feil brukernavn eller passord";
-      header("Location: ../login_page.php");
+      header("Location: ../index.php");
     }
     else {
       //verifying if password matches hash
@@ -30,7 +30,7 @@ require_once 'db_connecter.php';
       }
       else {
         $_SESSION['error']= "Feil brukernavn eller passord";
-        header("Location: ../login_page.php");
+        header("Location: ../index.php");
       }
     }
 
