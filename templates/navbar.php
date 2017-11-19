@@ -2,6 +2,13 @@
   <!-- Top navbar -->
   <nav class="navbar navbar-light navbar-expand-md d-none d-md-block">
     <div class="container">
+      <div class="mr-auto top-text">
+        <?php
+          if (isset($_SESSION['id'])) {
+            echo "Logged in as: ".$_SESSION['fname']." ".$_SESSION['lname'];
+          }
+         ?>
+      </div>
       <div class="navbar-nav ml-auto">
         <div class="btn-group mr-4">
           <button type="button" class="btn btn-sm btn-dropdown dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -10,12 +17,11 @@
           <div class="dropdown-menu">
             <?php
             if(isset($_SESSION['email'])){
-              echo  '<a class="dropdown-item" href="scripts/logout.php">Log out</a>';
-              echo '<a class="dropdown-item" href="user_registration.php">Register</a>';
-              echo '<a class="dropdown-item" href="my_page.php">My page</a>';
+              echo '<a class="dropdown-item" href="scripts/logout.php">Log out</a>';
+              echo '<a class="dropdown-item" href="user.php">My page</a>';
             }
             else {
-            echo '<a class="dropdown-item" href="./login_page.php">Log in</a>';
+            echo '<a href="#" class="dropdown-item" data-toggle="modal" data-target="#loginMenu">Log In</a>';
             echo '<a class="dropdown-item" href="user_registration.php">Register</a>';
             }
             ?>
@@ -49,10 +55,10 @@
             <a class="nav-link" href="test.php"></a>
           </li>
         </ul>
-        <form class="form-inline mr-auto">
+        <form action="productlist.php" method="get" class="form-inline mr-auto">
           <div class="form-group">
             <div class="input-group">
-              <input class="form-control mr-sm-2" type="text" placeholder="Search for products" size="40">
+              <input class="form-control mr-sm-2" type="text" name="query" placeholder="Search for products" size="40">
               <div class="input-group-btn">
                 <button class="btn btn-search" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
               </div>
@@ -69,12 +75,32 @@
             <li class="nav-item active">
               <a class="nav-link" href="test.php">Cart</a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="test.php">Log in</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="test.php">Register</a>
-            </li>
+            <?php
+            if(isset($_SESSION['email'])){
+              echo  '
+              <li class="nav-item active">
+                <a class="nav-link" href="scripts/logout.php">Log out</a>
+              </li>
+              ';
+              echo  '
+              <li class="nav-item active">
+                <a class="nav-link" href="user.php">My page</a>
+              </li>
+              ';
+            }
+            else {
+              echo  '
+              <li class="nav-item active">
+                <a href="#" class="nav-link" data-toggle="modal" data-target="#loginMenu">Log In</a>
+              </li>
+              ';
+              echo  '
+              <li class="nav-item active">
+                <a class="nav-link" href="user_registration.php">Register</a>
+              </li>
+              ';
+            }
+            ?>
             <li class="nav-item active">
               <a class="nav-link" href="test.php">Contact us</a>
             </li>
@@ -92,11 +118,58 @@
             Products
           </button>
           <div class="dropdown-menu" id="prodDropdown">
-            <a class="dropdown-item" href="productlist.php?type=Frukt">Sukkerfri Urge</a>
-            <a class="dropdown-item" href="productlist.php?type=Bær">Annet</a>
+            <a class="dropdown-item" href="productlist.php?type=Frukt">Frukt</a>
+            <a class="dropdown-item" href="productlist.php?type=Bær">Bær</a>
           </div>
         </div>
       </div>
     </div>
   </nav>
 </header>
+<!-- Login menu-->
+<div id="loginMenu" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Log in</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form action="scripts/login.php" method="post">
+          <div class="form-group">
+            <label>Email Address</label>
+            <input class="form-control" type="text" name="mail" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label>Password</label>
+            <input class="form-control" type="password" placeholder="Password" name="password">
+          </div>
+          <p class="text-danger text-center"><?php
+          if (isset($_SESSION['error'])) {
+            echo $_SESSION['error'];
+          }
+          else{
+            echo "";
+          }
+           ?></p>
+          <div class="form-group">
+            <button class="btn btn-danger float-right" type="submit">Login</button>
+          </div>
+         </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Mobile products menu-->
+<div id="productsMenu" class="panel panel-default panel-collapse collapse d-md-none">
+  <div class="container">
+    <ul class="nav flex-column">
+      <li class="nav-item nav-prod">
+        <a class="nav-link" href="productlist.php?type=Frukt">Frukt</a>
+      </li>
+      <li class="nav-item nav-prod">
+        <a class="nav-link" href="productlist.php?type=Bær">Bær</a>
+      </li>
+    </ul>
+  </div>
+</div>

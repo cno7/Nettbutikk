@@ -1,16 +1,34 @@
 <?php
 
 include 'scripts/db_connecter.php';
-
-if(!isset($_GET['type'])){
-  header('Location: index.php');
-}
 session_start();
-$type=$_GET['type'];
-
 $products=array();
 
-$sql = "SELECT * FROM items WHERE type='$type'";
+//Checks for parameteres from request
+if (isset($_GET['type'])) {
+  $type=$_GET['type'];
+  $sql = "SELECT * FROM items WHERE type='$type'";
+}
+elseif (isset($_GET['producer'])) {
+  $producer=$_GET['producer'];
+  $sql = "SELECT * FROM items WHERE producer='$producer'";
+}
+//Search function, matches itemcode, itemname, description, producer or type
+//Matches query anywhere in db columns
+elseif (isset($_GET['query'])) {
+  $query=$_GET['query'];
+  $sql = "SELECT * FROM items
+  WHERE itemcode LIKE '%$query%'
+  OR itemname LIKE '%$query%'
+  OR description LIKE '%$query%'
+  OR producer LIKE '%$query%'
+  OR type LIKE '%$query%'";
+}
+else {
+  header('Location: index.php');
+}
+
+//Get result from DB and add it to products array
 $result = mysqli_query($link, $sql);
 while ($row = mysqli_fetch_assoc($result)) {
   array_push($products, $row);
@@ -32,20 +50,6 @@ while ($row = mysqli_fetch_assoc($result)) {
   <body>
     <?php include 'templates/navbar.php'; ?>
     <main class="container">
-      <!-- Products menu for mobile -->
-      <div id="productsMenu" class="panel panel-default panel-collapse collapse d-md-none">
-        <div class="container">
-          <ul class="nav flex-column">
-            <li class="nav-item nav-prod">
-              <a class="nav-link" href="urge.php">Sukkerfri Urge</a>
-            </li>
-            <li class="nav-item nav-prod">
-              <a class="nav-link" href="annet.php">Annet</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!-- End of products menu for mobile -->
       <h1>Products</h1>
       <!-- Sample product listing
       <div class="container products-row py-2">
@@ -69,6 +73,7 @@ while ($row = mysqli_fetch_assoc($result)) {
       </div>
         End of sample product listing -->
         <?php
+        //Add all products as a row on page
         for ($i=0; $i < sizeof($products) ; $i++) {
           echo
           '

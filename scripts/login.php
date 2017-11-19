@@ -10,12 +10,13 @@ require_once 'db_connecter.php';
     $result = mysqli_query($link, $sql);
     if(!$row = mysqli_fetch_assoc($result)){
       $_SESSION['error']= "Feil brukernavn eller passord";
-      header("Location: ../login_page.php");
+      header("Location: ../index.php");
     }
     else {
       //verifying if password matches hash
       if(password_verify($password, $row['pwd'])){
         //assossiative array with session id, is unique for all users
+        unset($_SESSION['error']); //Removing error
         $_SESSION['id'] = $row['id'];
         $_SESSION['phone'] = $row['phone'];
         $_SESSION['fname'] = $row['fname'];
@@ -26,6 +27,10 @@ require_once 'db_connecter.php';
         $_SESSION['city'] = $row['city'];
         $_SESSION['usergroup'] = $row['usergroup'];
         //return user to index.php
+        header("Location: ../index.php");
+      }
+      else {
+        $_SESSION['error']= "Feil brukernavn eller passord";
         header("Location: ../index.php");
       }
     }

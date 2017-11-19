@@ -38,3 +38,14 @@
   </div>
   </div>
 </footer>
+<?php
+//Loading modal on error
+if(isset($_SESSION['error'])){
+  echo "<script>
+    $(window).ready(function(){
+      $('#loginMenu').modal({show: true});
+    });
+</script>
+";
+}
+ ?>
