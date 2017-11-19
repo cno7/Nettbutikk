@@ -33,10 +33,10 @@
           <h2>Highlights</h2>
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-              <img class="d-block img-fluid carousel1" src="images/eple_placeholder.jpg" alt="Eple" />
+              <img class="d-block img-fluid carousel1" src="images/product_placeholder.jpg" alt="Eple" />
             </div>
             <div class="carousel-item">
-              <img class="d-block img-fluid carousel1" src="images/appelsin_placeholder.jpg" alt="Appelsin" />
+              <img class="d-block img-fluid carousel1" src="images/orange_placeholder.jpg" alt="Appelsin" />
             </div>
             <div class="carousel-item">
               <img class="d-block img-fluid carousel1" src="images/pear_placeholder.jpg" alt="Pære" />
@@ -54,60 +54,7 @@
         <!-- End of Carousel -->
 
         <!-- Second Carousel -->
-        <div class="container text-center">
-          <h2>Frukt</h2>
-          <div class="row">
-              <div class="col-md-12">
-                <div class="carousel slide multi-item-carousel" id="multi-carousel1">
-                  <div class="carousel-inner">
-                    <div class="item-active">
-                      <div class="col-xs-4">
-                        <a href="#1" src="images/product_placeholder.jpg" class="img-responsive"></a>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-xs-4">
-                        <a href="#1" src="images/product_placeholder.jpg" class="img-responsive"></a>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-xs-4">
-                        <a href="#1" src="images/product_placeholder.jpg" class="img-responsive"></a>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-xs-4">
-                        <a href="#1" src="images/product_placeholder.jpg" class="img-responsive"></a>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-xs-4">
-                        <a href="#1" src="images/product_placeholder.jpg" class="img-responsive"></a>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-xs-4">
-                        <a href="#1" src="images/product_placeholder.jpg" class="img-responsive"></a>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-xs-4">
-                        <a href="#1" src="images/product_placeholder.jpg" class="img-responsive"></a>
-                      </div>
-                    </div>
-                  </div>
-                  <a class="carousel-control-prev" href="#multi-carousel1" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="carousel-control-next" href="#multi-carousel1" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </a>
-                </div>
-              </div>
-          </div>
-        </div>
+        <
         <!-- End of second Carousel -->
     </main>
     <!--Scripts-->
