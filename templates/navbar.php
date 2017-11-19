@@ -132,6 +132,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <h4 class="modal-title">Log in</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
       <div class="modal-body">
         <form action="scripts/login.php" method="post">
@@ -143,21 +144,18 @@
             <label>Password</label>
             <input class="form-control" type="password" placeholder="Password" name="password">
           </div>
+          <p class="text-danger text-center"><?php
+          if (isset($_SESSION['error'])) {
+            echo $_SESSION['error'];
+          }
+          else{
+            echo "";
+          }
+           ?></p>
           <div class="form-group">
-            <button class="btn btn-danger" type="submit">Login</button>
+            <button class="btn btn-danger float-right" type="submit">Login</button>
           </div>
          </form>
-         <p><?php
-         if (isset($_SESSION['error'])) {
-           echo $_SESSION['error'];
-         }
-         else{
-           echo "";
-         }
-          ?></p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
