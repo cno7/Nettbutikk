@@ -13,20 +13,6 @@
   <body>
     <?php include 'templates/navbar.php'; ?>
     <main class="container">
-      <!-- Products menu for mobile -->
-      <div id="productsMenu" class="panel panel-default panel-collapse collapse d-md-none">
-        <div class="container">
-          <ul class="nav flex-column">
-            <li class="nav-item nav-prod">
-              <a class="nav-link" href="urge.php">Sukkerfri Urge</a>
-            </li>
-            <li class="nav-item nav-prod">
-              <a class="nav-link" href="annet.php">Annet</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!-- End of products menu for mobile -->
         <!-- Main Carousel -->
         <div id="mainCarousel" class="carousel slide text-center" data-ride="carousel">
           <h2>Highlights</h2>

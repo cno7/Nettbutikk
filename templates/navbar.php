@@ -17,8 +17,7 @@
           <div class="dropdown-menu">
             <?php
             if(isset($_SESSION['email'])){
-              echo  '<a class="dropdown-item" href="scripts/logout.php">Log out</a>';
-              echo '<a class="dropdown-item" href="user_registration.php">Register</a>';
+              echo '<a class="dropdown-item" href="scripts/logout.php">Log out</a>';
               echo '<a class="dropdown-item" href="user.php">My page</a>';
             }
             else {
@@ -76,12 +75,32 @@
             <li class="nav-item active">
               <a class="nav-link" href="test.php">Cart</a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="test.php">Log in</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="test.php">Register</a>
-            </li>
+            <?php
+            if(isset($_SESSION['email'])){
+              echo  '
+              <li class="nav-item active">
+                <a class="nav-link" href="scripts/logout.php">Log out</a>
+              </li>
+              ';
+              echo  '
+              <li class="nav-item active">
+                <a class="nav-link" href="user.php">My page</a>
+              </li>
+              ';
+            }
+            else {
+              echo  '
+              <li class="nav-item active">
+                <a href="#" class="nav-link" data-toggle="modal" data-target="#loginMenu">Log In</a>
+              </li>
+              ';
+              echo  '
+              <li class="nav-item active">
+                <a class="nav-link" href="user_registration.php">Register</a>
+              </li>
+              ';
+            }
+            ?>
             <li class="nav-item active">
               <a class="nav-link" href="test.php">Contact us</a>
             </li>
@@ -141,5 +160,17 @@
         <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
       </div>
     </div>
+  </div>
+</div>
+<div id="productsMenu" class="panel panel-default panel-collapse collapse d-md-none">
+  <div class="container">
+    <ul class="nav flex-column">
+      <li class="nav-item nav-prod">
+        <a class="nav-link" href="productlist.php?type=Frukt">Frukt</a>
+      </li>
+      <li class="nav-item nav-prod">
+        <a class="nav-link" href="productlist.php?type=Bær">Bær</a>
+      </li>
+    </ul>
   </div>
 </div>

@@ -50,20 +50,6 @@ while ($row = mysqli_fetch_assoc($result)) {
   <body>
     <?php include 'templates/navbar.php'; ?>
     <main class="container">
-      <!-- Products menu for mobile -->
-      <div id="productsMenu" class="panel panel-default panel-collapse collapse d-md-none">
-        <div class="container">
-          <ul class="nav flex-column">
-            <li class="nav-item nav-prod">
-              <a class="nav-link" href="urge.php">Sukkerfri Urge</a>
-            </li>
-            <li class="nav-item nav-prod">
-              <a class="nav-link" href="annet.php">Annet</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!-- End of products menu for mobile -->
       <h1>Products</h1>
       <!-- Sample product listing
       <div class="container products-row py-2">
