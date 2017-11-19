@@ -98,7 +98,12 @@ main{
 .order-item a{
   color:black;
 }
-
+.formStyle {
+  width: 300px;
+}
+.formStyle input{
+  width: 100%;
+}
 /* ID's */
 
 #pageTitle{
