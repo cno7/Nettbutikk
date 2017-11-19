@@ -162,6 +162,7 @@
     </div>
   </div>
 </div>
+<!--Mobile products menu-->
 <div id="productsMenu" class="panel panel-default panel-collapse collapse d-md-none">
   <div class="container">
     <ul class="nav flex-column">

@@ -16,6 +16,7 @@ require_once 'db_connecter.php';
       //verifying if password matches hash
       if(password_verify($password, $row['pwd'])){
         //assossiative array with session id, is unique for all users
+        unset($_SESSION['error']); //Removing error
         $_SESSION['id'] = $row['id'];
         $_SESSION['phone'] = $row['phone'];
         $_SESSION['fname'] = $row['fname'];
