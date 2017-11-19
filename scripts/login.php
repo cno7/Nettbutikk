@@ -28,6 +28,10 @@ require_once 'db_connecter.php';
         //return user to index.php
         header("Location: ../index.php");
       }
+      else {
+        $_SESSION['error']= "Feil brukernavn eller passord";
+        header("Location: ../login_page.php");
+      }
     }
 
 
