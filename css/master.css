@@ -92,6 +92,24 @@ main{
 .order-item a{
   color:black;
 }
+.formStyle {
+  width: 300px;
+}
+.formStyle input{
+  width: 100%;
+}
+
+.top-text{
+  color:#f7f7f7;
+}
+
+.registerLabel{
+  display: inline-block;
+  float: left;
+  clear: left;
+  width: 130px;
+  text-align: left;
+}
 
 .carousel-control{
   padding-top:10%;
@@ -104,25 +122,7 @@ main{
   object-fit: contain;
 }
 
-.items-wrapper{
-  padding-top: 10px;
-  align-items: center;
-  border-top: 1px solid;
-}
 
-.item-container{
-  padding-left: 15px;
-}
-
-.text-container{
-  color: black;
-}
-
-.image{
-  width: 200px;
-  height: 200px;
-  object-fit: contain;
-}
 
 /* ID's */
 
@@ -149,8 +149,9 @@ main{
   right: 0;
   left: 0;
   min-height: 100%;
-  z-index:99;
+  z-index:5;
 }
+
 
 #prodDropdown a{
   min-width:300px;

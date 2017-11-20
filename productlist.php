@@ -50,20 +50,6 @@ while ($row = mysqli_fetch_assoc($result)) {
   <body>
     <?php include 'templates/navbar.php'; ?>
     <main class="container">
-      <!-- Products menu for mobile -->
-      <div id="productsMenu" class="panel panel-default panel-collapse collapse d-md-none">
-        <div class="container">
-          <ul class="nav flex-column">
-            <li class="nav-item nav-prod">
-              <a class="nav-link" href="urge.php">Sukkerfri Urge</a>
-            </li>
-            <li class="nav-item nav-prod">
-              <a class="nav-link" href="annet.php">Annet</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!-- End of products menu for mobile -->
       <h1>Products</h1>
       <!-- Sample product listing
       <div class="container products-row py-2">
@@ -103,7 +89,7 @@ while ($row = mysqli_fetch_assoc($result)) {
               </div>
               <div class="col-4 col-sm-4 col-md-2">
                 <h4>'.$products[$i]['out_price'].'$</h4>
-                <form action="#" method="post">
+                <form action="scripts/reg_order_to_db.php" method="post">
                   <input type="number" name="quantity" value="1" class="form-control form-control-sm col-8 col-sm-6 col-lg-4" />
                   <input type="hidden" name="itemcode" value="'.$products[$i]['picture_name'].'">
                   <button type="submit" class="btn btn-danger mt-2 btn-sm p-1 py-sm-1 px-sm-2">Add to cart</button>

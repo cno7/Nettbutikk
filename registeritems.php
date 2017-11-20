@@ -16,49 +16,50 @@
     <div class="container">
         <div class="row">
           <div class="col col-8">
-              <h3>Registrer shit her</h3>
+              <h3>Register new item</h3>
               <form class="" action="scripts/reg_product_db.php" method="post">
-                  Itemcode:
-                  <input type="text" name="item_code" value="">
+                  <label class="registerLabel">Itemcode:</label>
+                  <input type="text" class="inputField" name="item_code" value="">
                   </br>
-                  Itemname:
-                  <input type="text" name="item_name" value="">
+                  <label class="registerLabel">Itemname:</label>
+                  <input type="text" class="inputField" name="item_name" value="">
                   </br>
-                  Quantity:
-                  <input type="text" name="quantity" value="">
+                  <label class="registerLabel">Quantity:</label>
+                  <input type="text" class="inputField" name="quantity" value="">
                   </br>
-                  Description:
-                  <input type="text" name="description" value="">
+                  <label class="registerLabel">Description:</label>
+                  <input type="text" class="inputField" name="description" value="">
                   </br>
-                  Amount Sold:
-                  <input type="number" name="amount_sold" min="0" value="0">
+                  <label class="registerLabel">Amount Sold:</label>
+                  <input type="number" class="inputField" name="amount_sold" min="0" value="0">
                   </br>
-                  Producer:
-                  <input type="text" name="producer" value="">
+                  <label class="registerLabel">Producer:</label>
+                  <input type="text" class="inputField" name="producer" value="">
                   </br>
-                  Type:
-                  <input type="text" name="type" value="">
+                  <label class="registerLabel">Type:</label>
+                  <input type="text" class="inputField" name="type" value="">
                   </br>
-                  In Price:
-                  <input type="number" name="in_price" min="0" value="">
+                  <label class="registerLabel">In Price:</label>
+                  <input type="number" class="inputField" name="in_price" min="0" value="">
                   </br>
-                  Out Price:
-                  <input type="number" name="out_price" min="0" value="">
+                  <label class="registerLabel">Out Price:</label>
+                  <input type="number" class="inputField" name="out_price" min="0" value="">
                   </br>
-                  Gross Profit:
-                  <input type="number" name="gross_profit" min="0" value="">
+                  <label class="registerLabel">Gross Profit:</label>
+                  <input type="number" class="inputField" name="gross_profit" min="0" value="">
                   </br>
-                  Profit:
-                  <input type="number" name="profit" min="0" value="">
+                  <label class="registerLabel">Profit:</label>
+                  <input type="number" class="inputField" name="profit" min="0" value="">
                   </br>
-                  Picture Name:
-                  <input type="text" name="picture_name" value="">
+                  <label class="registerLabel">Picture Name:</label>
+                  <input type="text" class="inputField" name="picture_name" value="">
                   </br>
-                  <button type="submit" name="button">Add item to database</button>
+                  <label class="registerLabel"></label>
+                  <button type="submit" style="width: 170px;" name="button">Add item to database</button>
               </form>
           </div>
           <div class="col col-4">
-              Oversikt over varer som er registrert her i en liste
+              <h3>Items in the database</h3>
           </div>
         </div>
     </div>
