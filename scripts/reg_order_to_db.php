@@ -3,13 +3,13 @@ session_start();
 require_once 'db_connecter.php';
 
 if(isset($_SESSION['id'])){
-  $user = $_SESSION['email'];
+  $user = $_SESSION['email'];//currently not in use
   $userId = $_SESSION['id'];
   $date =  date('Y/m/d H:i:s');
   $array = array("is", "ris", "peace");
   $items = implode("€", $array);/*gjør om arrayet til en string med € som skilletegn*/
 
-  $sql ="INSERT INTO `orders`(`user`, `userId`, `date`, `items`) VALUES ('$user', '$userId', '$date', '$items')";
+  $sql ="INSERT INTO `orders`(`user_id`, `date`, `items`) VALUES ('$userId', '$date', '$items')";
   $result = mysqli_query($link, $sql);
 }
 header("Location: ../index.php");
