@@ -1,16 +1,17 @@
 /* Tags */
 body{
   overflow-y: scroll;
+  background-color:#e9e9e9;
 }
 
 main{
   height:4000px; /* To see scrolling */
-  background: linear-gradient(#d12121, #9e1919);
+  background-color:#f4f4f4;
 }
 
 /* Classes */
 .navbar{
-  background-color: #e02323;
+  background-color:#e02323;
 }
 
 .dropdown-menu{
@@ -64,6 +65,63 @@ main{
   color:#ce2121;
 }
 
+.products-row{
+  background-color: #f4f4f4;
+}
+
+.products-row:hover{
+  background-color: #e5e5e5;
+}
+
+.products-description{
+  font-size: 14px;
+}
+
+.carousel1{
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+}
+
+.img-thumbnail{
+  max-width:75%;
+}
+
+.order-item{
+  background-color: #e4e4e4;
+}
+
+.order-item:hover{
+  background-color: #e9e9e9;
+}
+
+.order-item a{
+  color:black;
+}
+.formStyle {
+  width: 300px;
+}
+.formStyle input{
+  width: 100%;
+}
+
+.top-text{
+  color:#f7f7f7;
+}
+
+.registerLabel{
+  display: inline-block;
+  float: left;
+  clear: left;
+  width: 130px;
+  text-align: left;
+}
+
+.inputField{
+    display: inline-block;
+    width: 170px;
+    padding-bottom: 3px;
+}
 /* ID's */
 
 #pageTitle{
@@ -89,7 +147,9 @@ main{
   right: 0;
   left: 0;
   min-height: 100%;
+  z-index:5;
 }
+
 
 #prodDropdown a{
   min-width:300px;
