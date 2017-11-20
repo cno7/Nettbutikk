@@ -108,6 +108,20 @@ main{
 .top-text{
   color:#f7f7f7;
 }
+
+.registerLabel{
+  display: inline-block;
+  float: left;
+  clear: left;
+  width: 130px;
+  text-align: left;
+}
+
+.inputField{
+    display: inline-block;
+    width: 170px;
+    padding-bottom: 3px;
+}
 /* ID's */
 
 #pageTitle{
