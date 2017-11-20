@@ -3,7 +3,7 @@ session_start();
 require_once 'db_connecter.php';
 
 if(isset($_SESSION['id'])){
-  $user = $_SESSION['email'];//currently not in use
+  /*$user = $_SESSION['email'];*/
   $userId = $_SESSION['id'];
   $date =  date('Y/m/d H:i:s');
   $array = array("is", "ris", "peace");
