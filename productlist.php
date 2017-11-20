@@ -89,7 +89,7 @@ while ($row = mysqli_fetch_assoc($result)) {
               </div>
               <div class="col-4 col-sm-4 col-md-2">
                 <h4>'.$products[$i]['out_price'].'$</h4>
-                <form action="#" method="post">
+                <form action="scripts/reg_order_to_db.php" method="post">
                   <input type="number" name="quantity" value="1" class="form-control form-control-sm col-8 col-sm-6 col-lg-4" />
                   <input type="hidden" name="itemcode" value="'.$products[$i]['picture_name'].'">
                   <button type="submit" class="btn btn-danger mt-2 btn-sm p-1 py-sm-1 px-sm-2">Add to cart</button>
