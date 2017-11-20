@@ -5,7 +5,7 @@
   }
 
   $orders=array();
-  $sql = "SELECT * FROM orders WHERE userid='".$_SESSION['id']."'";
+  $sql = "SELECT * FROM orders WHERE user_id='".$_SESSION['id']."'";
 
   $result = mysqli_query($link, $sql);
   while ($row = mysqli_fetch_assoc($result)) {
@@ -58,7 +58,7 @@
               for ($i=0; $i < sizeof($orders) ; $i++) {
                 echo '
                 <li class="order-item nav-item mt-1">
-                  <a class="nav-link" href="order.php?id='.$orders[$i]['orderid'].'">Orderno: '.$orders[$i]['orderid'].' &emsp; Date: '.$orders[$i]['date'].' &emsp; Price: 60000,-</a>
+                  <a class="nav-link" href="order.php?id='.$orders[$i]['order_id'].'">Orderno: '.$orders[$i]['order_id'].' &emsp; Date: '.$orders[$i]['date'].' &emsp; Price: 60000,-</a>
                 </li>';
               }
              ?>

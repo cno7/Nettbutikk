@@ -4,7 +4,7 @@
     header("Location: index.php");
   }
   $order=$_GET['id'];
-  $sql = "SELECT * FROM orders WHERE orderid='".$_SESSION['id']."'";
+  $sql = "SELECT * FROM orders WHERE order_id='".$_SESSION['id']."'";
 
   $result = mysqli_query($link, $sql);
   $currentOrder = mysqli_fetch_assoc($result);
@@ -24,7 +24,7 @@
   <body>
     <?php include 'templates/navbar.php'; ?>
     <main class="container">
-      <h3>Ordernumber: <?php echo $currentOrder['orderid']; ?></h3>
+      <h3>Ordernumber: <?php echo $currentOrder['order_id']; ?></h3>
       <div class="container py-2">
         <div class="row">
           <div class="col-3 col-sm-2 col-md-1 pr-0 pr-sm-1">
