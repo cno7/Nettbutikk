@@ -40,7 +40,441 @@
           </a>
         </div>
         <!-- End of Carousel -->
-        
+        <div class="container-fluid text-center">
+          <h2>Fruit</h2>
+        </div>
+        <!-- First row -->
+        <div class="container-fluid">
+          <div class="col-xs-12 items-wrapper">
+            <div class="row">
+              <!-- item -->
+              <div class="col-xs-3 item-container">
+                <div class="item">
+                  <a class="image-container" href="#">
+                    <div class="image-wrapper">
+                      <img class="image" src="images/product_placeholder.jpg" alt="product" />
+                    </div>
+                  </a>
+                  <div class="content-block">
+                    <a class="text-container" href="#">
+                      <div class="text-content">
+                        <h4>Eple</h4>
+                        <p>Lorem ipsum</p>
+                      </div>
+                    </a>
+                    <div class="box-bottom">
+                      <div class="price-wrapper">
+                        <span class="text-align-right">10,-</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="col-xs-3 item-container">
+                <div class="item">
+                  <a class="image-container" href="#">
+                    <div class="image-wrapper">
+                      <img class="image" src="images/product_placeholder.jpg" alt="product" />
+                    </div>
+                  </a>
+                  <div class="content-block">
+                    <a class="text-container" href="#">
+                      <div class="text-content">
+                        <h4>Eple</h4>
+                        <p>Lorem ipsum</p>
+                      </div>
+                    </a>
+                    <div class="box-bottom">
+                      <div class="price-wrapper">
+                        <span class="text-align-right">10,-</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-3 item-container">
+                <div class="item">
+                  <a class="image-container" href="#">
+                    <div class="image-wrapper">
+                      <img class="image" src="images/product_placeholder.jpg" alt="product" />
+                    </div>
+                  </a>
+                  <div class="content-block">
+                    <a class="text-container" href="#">
+                      <div class="text-content">
+                        <h4>Eple</h4>
+                        <p>Lorem ipsum</p>
+                      </div>
+                    </a>
+                    <div class="box-bottom">
+                      <div class="price-wrapper">
+                        <span class="text-align-right">10,-</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-3 item-container">
+                <div class="item">
+                  <a class="image-container" href="#">
+                    <div class="image-wrapper">
+                      <img class="image" src="images/product_placeholder.jpg" alt="product" />
+                    </div>
+                  </a>
+                  <div class="content-block">
+                    <a class="text-container" href="#">
+                      <div class="text-content">
+                        <h4>Eple</h4>
+                        <p>Lorem ipsum</p>
+                      </div>
+                    </a>
+                    <div class="box-bottom">
+                      <div class="price-wrapper">
+                        <span class="text-align-right">10,-</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-3 item-container">
+                <div class="item">
+                  <a class="image-container" href="#">
+                    <div class="image-wrapper">
+                      <img class="image" src="images/product_placeholder.jpg" alt="product" />
+                    </div>
+                  </a>
+                  <div class="content-block">
+                    <a class="text-container" href="#">
+                      <div class="text-content">
+                        <h4>Eple</h4>
+                        <p>Lorem ipsum</p>
+                      </div>
+                    </a>
+                    <div class="box-bottom">
+                      <div class="price-wrapper">
+                        <span class="text-align-right">10,-</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of first row -->
+        <div class="container-fluid text-center">
+          <h2>Fruit</h2>
+        </div>
+        <!-- Second row -->
+        <div class="container-fluid">
+          <div class="col-xs-12 items-wrapper">
+            <div class="row">
+              <!-- item -->
+              <div class="col-xs-3 item-container">
+                <div class="item">
+                  <a class="image-container" href="#">
+                    <div class="image-wrapper">
+                      <img class="image" src="images/product_placeholder.jpg" alt="product" />
+                    </div>
+                  </a>
+                  <div class="content-block">
+                    <a class="text-container" href="#">
+                      <div class="text-content">
+                        <h4>Eple</h4>
+                        <p>Lorem ipsum</p>
+                      </div>
+                    </a>
+                    <div class="box-bottom">
+                      <div class="price-wrapper">
+                        <span class="text-align-right">10,-</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="col-xs-3 item-container">
+                <div class="item">
+                  <a class="image-container" href="#">
+                    <div class="image-wrapper">
+                      <img class="image" src="images/product_placeholder.jpg" alt="product" />
+                    </div>
+                  </a>
+                  <div class="content-block">
+                    <a class="text-container" href="#">
+                      <div class="text-content">
+                        <h4>Eple</h4>
+                        <p>Lorem ipsum</p>
+                      </div>
+                    </a>
+                    <div class="box-bottom">
+                      <div class="price-wrapper">
+                        <span class="text-align-right">10,-</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-3 item-container">
+                <div class="item">
+                  <a class="image-container" href="#">
+                    <div class="image-wrapper">
+                      <img class="image" src="images/product_placeholder.jpg" alt="product" />
+                    </div>
+                  </a>
+                  <div class="content-block">
+                    <a class="text-container" href="#">
+                      <div class="text-content">
+                        <h4>Eple</h4>
+                        <p>Lorem ipsum</p>
+                      </div>
+                    </a>
+                    <div class="box-bottom">
+                      <div class="price-wrapper">
+                        <span class="text-align-right">10,-</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-3 item-container">
+                <div class="item">
+                  <a class="image-container" href="#">
+                    <div class="image-wrapper">
+                      <img class="image" src="images/product_placeholder.jpg" alt="product" />
+                    </div>
+                  </a>
+                  <div class="content-block">
+                    <a class="text-container" href="#">
+                      <div class="text-content">
+                        <h4>Eple</h4>
+                        <p>Lorem ipsum</p>
+                      </div>
+                    </a>
+                    <div class="box-bottom">
+                      <div class="price-wrapper">
+                        <span class="text-align-right">10,-</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of second row -->
+        <div class="container-fluid text-center">
+          <h2>Fruit</h2>
+        </div>
+        <!-- Third row -->
+        <div class="container-fluid">
+          <div class="col-xs-12 items-wrapper">
+            <div class="row">
+              <!-- item -->
+              <div class="col-xs-3 item-container">
+                <div class="item">
+                  <a class="image-container" href="#">
+                    <div class="image-wrapper">
+                      <img class="image" src="images/product_placeholder.jpg" alt="product" />
+                    </div>
+                  </a>
+                  <div class="content-block">
+                    <a class="text-container" href="#">
+                      <div class="text-content">
+                        <h4>Eple</h4>
+                        <p>Lorem ipsum</p>
+                      </div>
+                    </a>
+                    <div class="box-bottom">
+                      <div class="price-wrapper">
+                        <span class="text-align-right">10,-</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="col-xs-3 item-container">
+                <div class="item">
+                  <a class="image-container" href="#">
+                    <div class="image-wrapper">
+                      <img class="image" src="images/product_placeholder.jpg" alt="product" />
+                    </div>
+                  </a>
+                  <div class="content-block">
+                    <a class="text-container" href="#">
+                      <div class="text-content">
+                        <h4>Eple</h4>
+                        <p>Lorem ipsum</p>
+                      </div>
+                    </a>
+                    <div class="box-bottom">
+                      <div class="price-wrapper">
+                        <span class="text-align-right">10,-</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-3 item-container">
+                <div class="item">
+                  <a class="image-container" href="#">
+                    <div class="image-wrapper">
+                      <img class="image" src="images/product_placeholder.jpg" alt="product" />
+                    </div>
+                  </a>
+                  <div class="content-block">
+                    <a class="text-container" href="#">
+                      <div class="text-content">
+                        <h4>Eple</h4>
+                        <p>Lorem ipsum</p>
+                      </div>
+                    </a>
+                    <div class="box-bottom">
+                      <div class="price-wrapper">
+                        <span class="text-align-right">10,-</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-3 item-container">
+                <div class="item">
+                  <a class="image-container" href="#">
+                    <div class="image-wrapper">
+                      <img class="image" src="images/product_placeholder.jpg" alt="product" />
+                    </div>
+                  </a>
+                  <div class="content-block">
+                    <a class="text-container" href="#">
+                      <div class="text-content">
+                        <h4>Eple</h4>
+                        <p>Lorem ipsum</p>
+                      </div>
+                    </a>
+                    <div class="box-bottom">
+                      <div class="price-wrapper">
+                        <span class="text-align-right">10,-</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of third row -->
+        <div class="container-fluid text-center">
+          <h2>Fruit</h2>
+        </div>
+        <!-- Fourth row -->
+        <div class="container-fluid">
+          <div class="col-xs-12 items-wrapper">
+            <div class="row">
+              <!-- item -->
+              <div class="col-xs-3 item-container">
+                <div class="item">
+                  <a class="image-container" href="#">
+                    <div class="image-wrapper">
+                      <img class="image" src="images/product_placeholder.jpg" alt="product" />
+                    </div>
+                  </a>
+                  <div class="content-block">
+                    <a class="text-container" href="#">
+                      <div class="text-content">
+                        <h4>Eple</h4>
+                        <p>Lorem ipsum</p>
+                      </div>
+                    </a>
+                    <div class="box-bottom">
+                      <div class="price-wrapper">
+                        <span class="text-align-right">10,-</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="col-xs-3 item-container">
+                <div class="item">
+                  <a class="image-container" href="#">
+                    <div class="image-wrapper">
+                      <img class="image" src="images/product_placeholder.jpg" alt="product" />
+                    </div>
+                  </a>
+                  <div class="content-block">
+                    <a class="text-container" href="#">
+                      <div class="text-content">
+                        <h4>Eple</h4>
+                        <p>Lorem ipsum</p>
+                      </div>
+                    </a>
+                    <div class="box-bottom">
+                      <div class="price-wrapper">
+                        <span class="text-align-right">10,-</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-3 item-container">
+                <div class="item">
+                  <a class="image-container" href="#">
+                    <div class="image-wrapper">
+                      <img class="image" src="images/product_placeholder.jpg" alt="product" />
+                    </div>
+                  </a>
+                  <div class="content-block">
+                    <a class="text-container" href="#">
+                      <div class="text-content">
+                        <h4>Eple</h4>
+                        <p>Lorem ipsum</p>
+                      </div>
+                    </a>
+                    <div class="box-bottom">
+                      <div class="price-wrapper">
+                        <span class="text-align-right">10,-</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-3 item-container">
+                <div class="item">
+                  <a class="image-container" href="#">
+                    <div class="image-wrapper">
+                      <img class="image" src="images/product_placeholder.jpg" alt="product" />
+                    </div>
+                  </a>
+                  <div class="content-block">
+                    <a class="text-container" href="#">
+                      <div class="text-content">
+                        <h4>Eple</h4>
+                        <p>Lorem ipsum</p>
+                      </div>
+                    </a>
+                    <div class="box-bottom">
+                      <div class="price-wrapper">
+                        <span class="text-align-right">10,-</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of fourth row -->
     </main>
     <!--Scripts-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
