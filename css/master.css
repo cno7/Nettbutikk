@@ -77,12 +77,6 @@ main{
   font-size: 14px;
 }
 
-.carousel1{
-  width: 100%;
-  height: 400px;
-  object-fit: contain;
-}
-
 .img-thumbnail{
   max-width:75%;
 }
@@ -97,6 +91,37 @@ main{
 
 .order-item a{
   color:black;
+}
+
+.carousel-control{
+  padding-top:10%;
+  width:5%;
+}
+
+.carousel1{
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+}
+
+.items-wrapper{
+  padding-top: 10px;
+  align-items: center;
+  border-top: 1px solid;
+}
+
+.item-container{
+  padding-left: 15px;
+}
+
+.text-container{
+  color: black;
+}
+
+.image{
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
 }
 
 /* ID's */
@@ -130,3 +155,4 @@ main{
 #prodDropdown a{
   min-width:300px;
 }
+
