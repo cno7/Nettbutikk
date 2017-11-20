@@ -1,6 +1,15 @@
 <?php session_start();
+  require_once 'scripts/db_connecter.php';
   if(!isset($_SESSION['id'])){
     header('Location: index.php');
+  }
+
+  $orders=array();
+  $sql = "SELECT * FROM orders WHERE userid='".$_SESSION['id']."'";
+
+  $result = mysqli_query($link, $sql);
+  while ($row = mysqli_fetch_assoc($result)) {
+    array_push($orders, $row);
   }
  ?>
 <!DOCTYPE html>
@@ -45,15 +54,14 @@
         <div class="col-12 col-lg-6">
           <h3>Order history</h3>
           <ul class="nav flex-column">
-            <li class="order-item nav-item mt-1">
-              <a class="nav-link" href="urge.php">Orderno: 128371982 &emsp; Date: 24.12.2017 &emsp; Price: 60000,-</a>
-            </li>
-            <li class="order-item nav-item mt-1">
-              <a class="nav-link" href="urge.php">Orderno: 128371982 &emsp; Date: 24.12.2017 &emsp; Price: 60000,-</a>
-            </li>
-            <li class="order-item nav-item mt-1">
-              <a class="nav-link" href="urge.php">Orderno: 128371982 &emsp; Date: 24.12.2017 &emsp; Price: 60000,-</a>
-            </li>
+            <?php
+              for ($i=0; $i < sizeof($orders) ; $i++) {
+                echo '
+                <li class="order-item nav-item mt-1">
+                  <a class="nav-link" href="order.php?id='.$orders[$i]['orderid'].'">Orderno: '.$orders[$i]['orderid'].' &emsp; Date: '.$orders[$i]['date'].' &emsp; Price: 60000,-</a>
+                </li>';
+              }
+             ?>
           </ul>
         </div>
       </div>
