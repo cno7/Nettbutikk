@@ -129,7 +129,7 @@ main{
 }
 
 .item-container{
-  padding-left: 15px;
+  padding-left: 10px;
 }
 
 .text-container{
@@ -137,9 +137,14 @@ main{
 }
 
 .image{
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: auto;
   object-fit: contain;
+}
+
+.item-container .item:hover{
+  background: #e1e1e1;
+  border: 1px solid #d0d0d0;
 }
 
 /* ID's */
