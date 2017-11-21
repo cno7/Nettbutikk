@@ -19,15 +19,31 @@
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
               <img class="d-block img-fluid carousel1" src="images/product_placeholder.jpg" alt="Eple" />
+              <div class="carousel-caption">
+                <h4>Eple</h4>
+                <p>Supersøtt eple</p>
+              </div>
             </div>
             <div class="carousel-item">
               <img class="d-block img-fluid carousel1" src="images/orange_placeholder.jpg" alt="Appelsin" />
+              <div class="carousel-caption">
+                <h4>Appelsin</h4>
+                <p>Superorange appelsin</p>
+              </div>
             </div>
             <div class="carousel-item">
               <img class="d-block img-fluid carousel1" src="images/pear_placeholder.jpg" alt="Pære" />
+              <div class="carousel-caption">
+                <h4>Pære</h4>
+                <p>Helt jævlig pære</p>
+              </div>
             </div>
             <div class="carousel-item">
               <img class="d-block img-fluid carousel1" src="images/banana_placeholder.jpg" alt="Banan" />
+              <div class="carousel-caption">
+                <h4>Banan</h4>
+                <p>Gul banan</p>
+              </div>
             </div>
           </div>
           <a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev">
@@ -41,7 +57,9 @@
         </div>
         <!-- End of Carousel -->
         <div class="container-fluid text-center mt-4">
-          <h2>Fruit</h2>
+          <a href="#" class="title-container">
+            <h2>Fruit</h2>
+          </a>
         </div>
         <!-- First row -->
         <div class="container-fluid">
@@ -142,7 +160,9 @@
 
         <!-- End of first row -->
         <div class="container-fluid text-center mt-4">
-          <h2>Candy</h2>
+          <a href="#" class="title-container">
+            <h2>Candy</h2>
+          </a>
         </div>
         <!-- Second row -->
         <div class="container-fluid">
@@ -245,7 +265,9 @@
         </div>
         <!-- End of second row -->
         <div class="container-fluid text-center mt-4">
-          <h2>Vegetables</h2>
+          <a href="#" class="title-container">
+            <h2>Vegetables</h2>
+          </a>
         </div>
         <!-- Third row -->
         <div class="container-fluid">
@@ -348,7 +370,9 @@
         </div>
         <!-- End of third row -->
         <div class="container-fluid text-center mt-4">
-          <h2>Milk</h2>
+          <a href="#" class="title-container">
+            <h2>Milk</h2>
+          </a>
         </div>
         <!-- Fourth row -->
         <div class="container-fluid">
