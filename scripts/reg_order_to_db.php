@@ -6,13 +6,10 @@ if(isset($_SESSION['id'])){
   /*$user = $_SESSION['email'];*/
   $userId = $_SESSION['id'];
   $date =  date('Y/m/d H:i:s');
-  $array_items = array("is", "ris", "peace");
-  $items = implode("€", $array_items);/*gjør om arrayet til en string med € som skilletegn*/
-  $array_price = array(240, 300, 10000);
-  $item_price = implode("€", $array_price);
-  $total_price  = array_sum($array_price);
+  $array = array("is", "ris", "peace");
+  $items = implode("€", $array);/*gjør om arrayet til en string med € som skilletegn*/
 
-  $sql ="INSERT INTO `orders`(`user_id`, `date`, `items`, `item_price`, `total_price`) VALUES ('$userId', '$date', '$items', '$item_price', '$total_price')";
+  $sql ="INSERT INTO `orders`(`user_id`, `date`, `items`) VALUES ('$userId', '$date', '$items')";
   $result = mysqli_query($link, $sql);
 }
 header("Location: ../index.php");
