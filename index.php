@@ -40,7 +40,7 @@
           </a>
         </div>
         <!-- End of Carousel -->
-        <div class="container-fluid text-center">
+        <div class="container-fluid text-center mt-4">
           <h2>Fruit</h2>
         </div>
         <!-- First row -->
@@ -141,8 +141,8 @@
               </div>
 
         <!-- End of first row -->
-        <div class="container-fluid text-center">
-          <h2>Fruit</h2>
+        <div class="container-fluid text-center mt-4">
+          <h2>Candy</h2>
         </div>
         <!-- Second row -->
         <div class="container-fluid">
@@ -244,8 +244,8 @@
           </div>
         </div>
         <!-- End of second row -->
-        <div class="container-fluid text-center">
-          <h2>Fruit</h2>
+        <div class="container-fluid text-center mt-4">
+          <h2>Vegetables</h2>
         </div>
         <!-- Third row -->
         <div class="container-fluid">
@@ -347,8 +347,8 @@
           </div>
         </div>
         <!-- End of third row -->
-        <div class="container-fluid text-center">
-          <h2>Fruit</h2>
+        <div class="container-fluid text-center mt-4">
+          <h2>Milk</h2>
         </div>
         <!-- Fourth row -->
         <div class="container-fluid">

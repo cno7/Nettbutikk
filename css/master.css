@@ -123,7 +123,7 @@ main{
 }
 
 .items-wrapper{
-  padding-top: 10px;
+  padding-top: 30px;
   align-items: center;
   border-top: 1px solid;
 }
@@ -145,6 +145,10 @@ main{
 .item-container .item:hover{
   background: #e1e1e1;
   border: 1px solid #d0d0d0;
+}
+
+.category-title{
+  padding: 30px;
 }
 
 /* ID's */
