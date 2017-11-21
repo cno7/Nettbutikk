@@ -45,10 +45,10 @@
         </div>
         <!-- First row -->
         <div class="container-fluid">
-          <div class="col-xs-12 items-wrapper">
+          <div class="col-12 items-wrapper">
             <div class="row">
               <!-- item -->
-              <div class="col-xs-3 item-container">
+              <div class="col-3 item-container">
                 <div class="item">
                   <a class="image-container" href="#">
                     <div class="image-wrapper">
@@ -71,7 +71,7 @@
                 </div>
               </div>
               <!-- item -->
-              <div class="col-xs-3 item-container">
+              <div class="col-3 item-container">
                 <div class="item">
                   <a class="image-container" href="#">
                     <div class="image-wrapper">
@@ -94,7 +94,7 @@
                 </div>
               </div>
 
-              <div class="col-xs-3 item-container">
+              <div class="col-3 item-container">
                 <div class="item">
                   <a class="image-container" href="#">
                     <div class="image-wrapper">
@@ -117,7 +117,7 @@
                 </div>
               </div>
 
-              <div class="col-xs-3 item-container">
+              <div class="col-3 item-container">
                 <div class="item">
                   <a class="image-container" href="#">
                     <div class="image-wrapper">
@@ -140,41 +140,16 @@
                 </div>
               </div>
 
-              <div class="col-xs-3 item-container">
-                <div class="item">
-                  <a class="image-container" href="#">
-                    <div class="image-wrapper">
-                      <img class="image" src="images/product_placeholder.jpg" alt="product" />
-                    </div>
-                  </a>
-                  <div class="content-block">
-                    <a class="text-container" href="#">
-                      <div class="text-content">
-                        <h4>Eple</h4>
-                        <p>Lorem ipsum</p>
-                      </div>
-                    </a>
-                    <div class="box-bottom">
-                      <div class="price-wrapper">
-                        <span class="text-align-right">10,-</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
         <!-- End of first row -->
         <div class="container-fluid text-center">
           <h2>Fruit</h2>
         </div>
         <!-- Second row -->
         <div class="container-fluid">
-          <div class="col-xs-12 items-wrapper">
+          <div class="col-12 items-wrapper">
             <div class="row">
               <!-- item -->
-              <div class="col-xs-3 item-container">
+              <div class="col-3 item-container">
                 <div class="item">
                   <a class="image-container" href="#">
                     <div class="image-wrapper">
@@ -197,7 +172,7 @@
                 </div>
               </div>
               <!-- item -->
-              <div class="col-xs-3 item-container">
+              <div class="col-3 item-container">
                 <div class="item">
                   <a class="image-container" href="#">
                     <div class="image-wrapper">
@@ -220,7 +195,7 @@
                 </div>
               </div>
 
-              <div class="col-xs-3 item-container">
+              <div class="col-3 item-container">
                 <div class="item">
                   <a class="image-container" href="#">
                     <div class="image-wrapper">
@@ -243,7 +218,7 @@
                 </div>
               </div>
 
-              <div class="col-xs-3 item-container">
+              <div class="col-3 item-container">
                 <div class="item">
                   <a class="image-container" href="#">
                     <div class="image-wrapper">
@@ -274,10 +249,10 @@
         </div>
         <!-- Third row -->
         <div class="container-fluid">
-          <div class="col-xs-12 items-wrapper">
+          <div class="col-12 items-wrapper">
             <div class="row">
               <!-- item -->
-              <div class="col-xs-3 item-container">
+              <div class="col-3 item-container">
                 <div class="item">
                   <a class="image-container" href="#">
                     <div class="image-wrapper">
@@ -300,7 +275,7 @@
                 </div>
               </div>
               <!-- item -->
-              <div class="col-xs-3 item-container">
+              <div class="col-3 item-container">
                 <div class="item">
                   <a class="image-container" href="#">
                     <div class="image-wrapper">
@@ -323,7 +298,7 @@
                 </div>
               </div>
 
-              <div class="col-xs-3 item-container">
+              <div class="col-3 item-container">
                 <div class="item">
                   <a class="image-container" href="#">
                     <div class="image-wrapper">
@@ -346,7 +321,7 @@
                 </div>
               </div>
 
-              <div class="col-xs-3 item-container">
+              <div class="col-3 item-container">
                 <div class="item">
                   <a class="image-container" href="#">
                     <div class="image-wrapper">
@@ -377,10 +352,10 @@
         </div>
         <!-- Fourth row -->
         <div class="container-fluid">
-          <div class="col-xs-12 items-wrapper">
+          <div class="col-12 items-wrapper">
             <div class="row">
               <!-- item -->
-              <div class="col-xs-3 item-container">
+              <div class="col-3 item-container">
                 <div class="item">
                   <a class="image-container" href="#">
                     <div class="image-wrapper">
@@ -403,7 +378,7 @@
                 </div>
               </div>
               <!-- item -->
-              <div class="col-xs-3 item-container">
+              <div class="col-3 item-container">
                 <div class="item">
                   <a class="image-container" href="#">
                     <div class="image-wrapper">
@@ -426,7 +401,7 @@
                 </div>
               </div>
 
-              <div class="col-xs-3 item-container">
+              <div class="col-3 item-container">
                 <div class="item">
                   <a class="image-container" href="#">
                     <div class="image-wrapper">
@@ -449,7 +424,7 @@
                 </div>
               </div>
 
-              <div class="col-xs-3 item-container">
+              <div class="col-3 item-container">
                 <div class="item">
                   <a class="image-container" href="#">
                     <div class="image-wrapper">
