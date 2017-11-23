@@ -4,7 +4,7 @@
     header("Location: index.php");
   }
   $order=$_GET['id'];
-  $sql = "SELECT * FROM orders WHERE order_id='".$_SESSION['id']."'";
+  $sql = "SELECT * FROM orders WHERE order_id='".$order."'";
 
   $result = mysqli_query($link, $sql);
   $currentOrder = mysqli_fetch_assoc($result);
