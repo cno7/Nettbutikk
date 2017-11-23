@@ -19,6 +19,10 @@ function increaseBuyAmount() {
 function addToCart() {
     var amount = document.getElementById("inpBuyAmount").value;
 
+    var boughtItem = document.getElementById("lblProductId").innerHTML;
+    console.log(boughtItem);
+    localStorage.setItem('Item', boughtItem);
+    localStorage.setItem('Amount', amount);
     if(amount == 1) {
         document.getElementById("addedToCart").innerHTML = amount + " item added to cart!"
     }

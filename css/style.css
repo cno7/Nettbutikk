@@ -33,6 +33,21 @@ input[type=number]::-webkit-outer-spin-button {
 .imgProduct {
     max-height: 300px;
 }
+.btnCartBuy{
+    width: 120px;
+    height: 60px;
+}
+.cart-buy-total{
+    position: relative;
+    float: right;
+}
+.fadedGrey{
+    color: grey;
+}
+.ulNoShow{
+    text-align: left;
+    list-style-type: none;
+}
 /* Code borrowed from w3schools. Probably change it so it become our own design */
 /* Style the tab */
 div.tab {
