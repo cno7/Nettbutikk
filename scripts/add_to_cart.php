@@ -37,6 +37,7 @@
       array_push($_SESSION['cart'], $item);
     }else{
       $_SESSION['cart'][$location][2]+=$item[2];
+      $_SESSION['cart'][$location][4]+=$item_price * $amount;
     }
     for($a=0; $a < sizeof($_SESSION['cart']); $a++) {
         echo "Item id: " . $_SESSION['cart'][$a][0] . "</br>";
