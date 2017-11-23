@@ -1,10 +1,10 @@
 <?php session_start();
   require_once 'scripts/db_connecter.php';
-  if(!isset($_SESSION['id'])){
+  if(!isset($_SESSION['id']) || !isset($_GET['id'])){
     header("Location: index.php");
   }
   $order=$_GET['id'];
-  $sql = "SELECT * FROM orders WHERE order_id='".$_SESSION['id']."'";
+  $sql = "SELECT * FROM orders WHERE order_id='".$order."'";
 
   $result = mysqli_query($link, $sql);
   $currentOrder = mysqli_fetch_assoc($result);
@@ -29,14 +29,17 @@
         <div class="row">
           <div class="col-3 col-sm-2 col-md-1 pr-0 pr-sm-1">
           </div>
-          <div class="col-4 col-sm-5 col-md-8 pl-0 pl-sm-1">
+          <div class="col-3 col-sm-4 col-md-8 pl-0 pl-sm-1">
             <h5>Products</h5>
           </div>
           <div class="col-2 col-sm-2 col-md-1">
             Amount
           </div>
           <div class="col-2 col-sm-2 col-md-1">
-            Price
+            Price per
+          </div>
+          <div class="col-2 col-sm-2 col-md-1">
+            Total price
           </div>
         </div>
       </div>
@@ -50,13 +53,16 @@
             <div class="col-3 col-sm-2 col-md-1 pr-0 pr-sm-1">
               <img src="images/product_placeholder.jpg" class="img-thumbnail img-products">
             </div>
-            <div class="col-4 col-sm-5 col-md-8 pl-0 pl-sm-1">
-              <h6>'.$items[$i].'</h6>
+            <div class="col-3 col-sm-4 col-md-8 pl-0 pl-sm-1">
+              <h6 class="text-truncate">'.$items[$i].'</h6>
               <p class="products-description text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis rhoncus risus at tristique.</p>
             </div>
-            <div class="col-2 col-sm-2 col-md-1">1</div>
+            <div class="col-2 col-sm-2 col-md-1">2</div>
             <div class="col-2 col-sm-2 col-md-1">
               100$
+            </div>
+            <div class="col-2 col-sm-2 col-md-1">
+              200$
             </div>
           </div>
         </div>';
@@ -67,8 +73,10 @@
         <div class="row">
           <div class="col-3 col-sm-2 col-md-1 pr-0 pr-sm-1">
           </div>
-          <div class="col-4 col-sm-5 col-md-8 pl-0 pl-sm-1">
+          <div class="col-3 col-sm-4 col-md-8 pl-0 pl-sm-1">
             <h5>Total</h5>
+          </div>
+          <div class="col-2 col-sm-2 col-md-1">
           </div>
           <div class="col-2 col-sm-2 col-md-1">
           </div>
