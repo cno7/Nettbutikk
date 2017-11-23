@@ -19,17 +19,17 @@
 
     // itemnavn, itemid, amount, price per item, total pris
 
-
+    $location=-1;
 
     $item = array($item_id, $item_name, $amount, $item_price, $total_price);
     if(!isset($_SESSION['cart'])){
-      $_SESSION['cart'] = array($item);
+      $_SESSION['cart'] = array();
     }
-    $location=-1;
-
-    for ($i=0; $i < sizeof($_SESSION['cart']); $i++) {
-      if($_SESSION['cart'][$i][0] == $item[0]){
-        $location=$i;
+    else{
+      for ($i=0; $i < sizeof($_SESSION['cart']); $i++) {
+        if($_SESSION['cart'][$i][0] == $item[0]){
+          $location=$i;
+        }
       }
     }
 
@@ -39,11 +39,11 @@
       $_SESSION['cart'][$location][2]+=$item[2];
     }
     for($a=0; $a < sizeof($_SESSION['cart']); $a++) {
-        echo "Item: " . $_SESSION['cart'][1][0] . "</br>";
-        echo "Item id: " . $_SESSION['cart'][0][0] . "</br>";
-        echo "Amount: " . $_SESSION['cart'][2][0] . "</br>";
-        echo "Item price: " . $_SESSION['cart'][3][0] . "</br>";
-        echo "Total price: " . $_SESSION['cart'][4][0] . "</br>";
+        echo "Item id: " . $_SESSION['cart'][$a][0] . "</br>";
+        echo "Item name: " . $_SESSION['cart'][$a][1] . "</br>";
+        echo "Amount: " . $_SESSION['cart'][$a][2] . "</br>";
+        echo "Item price: " . $_SESSION['cart'][$a][3] . "</br>";
+        echo "Total price: " . $_SESSION['cart'][$a][4] . "</br>";
         //break;
     }
 
