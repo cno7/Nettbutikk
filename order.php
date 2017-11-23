@@ -1,6 +1,6 @@
 <?php session_start();
   require_once 'scripts/db_connecter.php';
-  if(!isset($_SESSION['id'])){
+  if(!isset($_SESSION['id']) || !isset($_GET['id'])){
     header("Location: index.php");
   }
   $order=$_GET['id'];
