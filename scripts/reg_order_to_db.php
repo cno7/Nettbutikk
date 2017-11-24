@@ -4,15 +4,19 @@ require_once 'db_connecter.php';
 
 if(isset($_SESSION['id'])){
   /*$user = $_SESSION['email'];*/
+
   $userId = $_SESSION['id'];
   $date =  date('Y/m/d H:i:s');
-  $array_items = array("is", "ris", "peace");
-  $items = implode("€", $array_items);/*gjør om arrayet til en string med € som skilletegn*/
-  $array_price = array(240, 300, 10000);
-  $item_price = implode("€", $array_price);
-  $total_price  = array_sum($array_price);
+  $total=0;
 
-  $sql ="INSERT INTO `orders`(`user_id`, `date`, `items`, `item_price`, `total_price`) VALUES ('$userId', '$date', '$items', '$item_price', '$total_price')";
+for ($i=0; $i < sizeof($_SESSION['cart']); $i++) {
+  $total+=$_SESSION['cart'][$i][4];
+  implode($_SESSION['cart'][$i], "$");
+}
+implode($_SESSION['cart'], "€");
+$items = $_SESSION['cart'];
+
+  $sql ="INSERT INTO `orders`(`user_id`, `date`, `items`) VALUES ('$userId', '$date', '$items')";
   $result = mysqli_query($link, $sql);
 }
 header("Location: ../index.php");
