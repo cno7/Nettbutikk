@@ -8,7 +8,13 @@
 
   $result = mysqli_query($link, $sql);
   $currentOrder = mysqli_fetch_assoc($result);
+
+  if($currentorder['user_id']!=$_SESSION['id']){
+    header("Location: index.php");
+  }
+
   $items = explode("€", $currentOrder['items']);
+
  ?>
 <!DOCTYPE html>
 <html>
