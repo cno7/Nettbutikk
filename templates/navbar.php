@@ -6,6 +6,9 @@
         <?php
           if (isset($_SESSION['id'])) {
             echo "Logged in as: ".$_SESSION['fname']." ".$_SESSION['lname'];
+            if($_SESSION['usergroup']==2){
+              echo ' (admin)';
+            }
           }
          ?>
       </div>
@@ -118,8 +121,10 @@
             Products
           </button>
           <div class="dropdown-menu" id="prodDropdown">
-            <a class="dropdown-item" href="productlist.php?type=Frukt">Frukt</a>
-            <a class="dropdown-item" href="productlist.php?type=Bær">Bær</a>
+            <a class="dropdown-item" href="productlist.php?type=Fruit">Fruit</a>
+            <a class="dropdown-item" href="productlist.php?type=Candy">Candy</a>
+            <a class="dropdown-item" href="productlist.php?type=Vegetables">Vegetables</a>
+            <a class="dropdown-item" href="productlist.php?type=Milk">Milk</a>
           </div>
         </div>
       </div>
@@ -165,10 +170,16 @@
   <div class="container">
     <ul class="nav flex-column">
       <li class="nav-item nav-prod">
-        <a class="nav-link" href="productlist.php?type=Frukt">Frukt</a>
+        <a class="nav-link" href="productlist.php?type=Fruit">Fruit</a>
       </li>
       <li class="nav-item nav-prod">
-        <a class="nav-link" href="productlist.php?type=Bær">Bær</a>
+        <a class="nav-link" href="productlist.php?type=Candy">Candy</a>
+      </li>
+      <li class="nav-item nav-prod">
+        <a class="nav-link" href="productlist.php?type=Vegetables">Vegetables</a>
+      </li>
+      <li class="nav-item nav-prod">
+        <a class="nav-link" href="productlist.php?type=Milk">Milk</a>
       </li>
     </ul>
   </div>

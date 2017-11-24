@@ -9,7 +9,11 @@
   $phone = $_POST['phone'];
   $email = $_POST['email'];
   $pwd = $_POST['pwd'];
-  $uGroup = 1;
+  if(isset($_POST['usergroup'])){
+    $uGroup = $_POST['usergroup'];
+  }else{
+    $uGroup = 1;
+  }
   /* Checks the email entered by user.If used, the program will write an error message. if not, it saves the user in the database*/
   $sql_check = "SELECT * FROM users WHERE email='$email'";
   $result_check = mysqli_query($link, $sql_check);

@@ -67,6 +67,7 @@ main{
 
 .products-row{
   background-color: #f4f4f4;
+  color:black;
 }
 
 .products-row:hover{
@@ -151,6 +152,16 @@ main{
   color: black;
 }
 
+.prod-link{
+  text-decoration: none !important;
+  color:black;
+}
+
+.prod-link:hover{
+  text-decoration: none !important;
+  color:black;
+}
+
 /* ID's */
 
 #pageTitle{
@@ -183,4 +194,3 @@ main{
 #prodDropdown a{
   min-width:300px;
 }
-
