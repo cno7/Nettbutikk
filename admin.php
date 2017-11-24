@@ -40,6 +40,14 @@
            <button class="btn btn-danger" type="submit">Register item</button>
          </form>
        </div>
+       <h4 class="mt-5">Remove an item</h4>
+       <div class="col-4">
+         <form class="form-group" action="scripts/remove_item.php" method="post">
+           <label>Remove an item by itemcode</label>
+           <input class="form-control" type="text" name="itemcode" placeholder="Itemcode">
+           <button class="btn btn-danger" type="submit">Remove Item</button>
+         </form>
+       </div>
      </main>
 
      <!--Scripts-->
