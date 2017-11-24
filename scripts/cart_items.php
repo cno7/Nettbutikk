@@ -70,7 +70,9 @@ echo "<div class=\"col-2 col-sm-2 cart-buy-total\">";
 echo "<span><b>Order total: </b></span><span><b>" . $total . "</b></span><span><b>,-</b></span>";
 echo "</br>";
 echo "</br>";
-echo "<button type=\"button\" onclick=\"buyCart();\" class=\"btnCartBuy\" name=\"button\">BUY</button>";
+echo '<form action="scripts/reg_order_to_db.php" method="post">';
+echo "<button type=\"submit\" class=\"btnCartBuy\" name=\"button\">BUY</button>";
+echo '</form>';
 echo "</div>";
 echo "</div>";
 }
