@@ -13,7 +13,18 @@
     header("Location: index.php");
   }
 
-  $items = explode("€", $currentOrder['items']);
+  $array = explode("€", $currentOrder['items']);
+  $items = array();
+  $item_info = array();
+  for ($i=0; $i < sizeof($array); $i++) {
+    array_push($items, explode("$", $array[$i]));
+  }
+
+  for ($b=0; $b < sizeof($items); $b++) {
+    $sql_items = "SELECT * FROM items WHERE itemcode='".$items[$b][0]."'";
+    $result_items = mysqli_query($link, $sql_items);
+    array_push($item_info, mysqli_fetch_assoc($result_items));
+  }
 
  ?>
 <!DOCTYPE html>
@@ -52,29 +63,30 @@
       <!-- Sample product -->
       <?php
 
-      for ($i=0; $i < sizeof($items); $i++) {
+      for ($a=0; $a < sizeof($items); $a++) {
         echo'
         <div class="container products-row py-2">
           <div class="row">
             <div class="col-3 col-sm-2 col-md-1 pr-0 pr-sm-1">
-              <img src="images/product_placeholder.jpg" class="img-thumbnail img-products">
+              <img src="images/'.$item_info[$a]['picture_name'].'" class="img img-fluid img-thumbnail">
             </div>
             <div class="col-3 col-sm-4 col-md-8 pl-0 pl-sm-1">
-              <h6 class="text-truncate">'.$items[$i].'</h6>
-              <p class="products-description text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis rhoncus risus at tristique.</p>
+              <h6 class="text-truncate">'.$items[$a][1].'</h6>
+              <p class="products-description text-truncate">'.$item_info[$a]['description'].'</p>
             </div>
-            <div class="col-2 col-sm-2 col-md-1">2</div>
+            <div class="col-2 col-sm-2 col-md-1">'.$items[$a][2].'$</div>
             <div class="col-2 col-sm-2 col-md-1">
-              100$
+              '.$items[$a][3].'$
             </div>
             <div class="col-2 col-sm-2 col-md-1">
-              200$
+              '.$items[$a][4].'$
             </div>
           </div>
         </div>';
       }
        ?>
       <!-- Sample product end -->
+      <hr>
       <div class="container py-2">
         <div class="row">
           <div class="col-3 col-sm-2 col-md-1 pr-0 pr-sm-1">
@@ -87,7 +99,7 @@
           <div class="col-2 col-sm-2 col-md-1">
           </div>
           <div class="col-2 col-sm-2 col-md-1">
-            <h5>400$</h5>
+            <h5><?php echo $currentOrder['total_price']; ?>$</h5>
           </div>
         </div>
       </div>
