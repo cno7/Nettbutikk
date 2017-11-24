@@ -19,18 +19,14 @@ function increaseBuyAmount() {
 function addToCart() {
     var amount = document.getElementById("inpBuyAmount").value;
 
-    var boughtItem = document.getElementById("lblProductId").innerHTML;
-    console.log(boughtItem);
-    localStorage.setItem('Item', boughtItem);
-    localStorage.setItem('Amount', amount);
     if(amount == 1) {
-        document.getElementById("addedToCart").innerHTML = amount + " item added to cart!"
+        document.getElementById("addedToCart").innerHTML = amount + " item added to cart!";
+        setTimeout(function(){document.getElementById("addedToCart").innerHTML = "&nbsp;"}, 5000);
     }
     if(amount > 1) {
-        document.getElementById("addedToCart").innerHTML = amount + " items added to cart!"
+        document.getElementById("addedToCart").innerHTML = amount + " items added to cart!";
+        setTimeout(function(){document.getElementById("addedToCart").innerHTML = "&nbsp;"}, 5000);
     }
-    setTimeout(function(){document.getElementById("addedToCart").innerHTML = "&nbsp;"}, 5000);
-    console.log(amount);
 }
 function openTab(evt, tabName) {
   var i, tabcontent, tablinks;

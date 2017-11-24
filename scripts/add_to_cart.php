@@ -13,12 +13,6 @@
     $item_price = $row['out_price'];
     $total_price = $item_price * $amount;
 
-    // $_SESSION['cart'] = array( array($item_id), array($amount));
-    //
-    // header("Location: ../productpage.php?product=" . $row['itemname']);
-
-    // itemnavn, itemid, amount, price per item, total pris
-
     $location=-1;
 
     $item = array($item_id, $item_name, $amount, $item_price, $total_price);
@@ -39,13 +33,15 @@
       $_SESSION['cart'][$location][2]+=$item[2];
       $_SESSION['cart'][$location][4]=$item_price * $_SESSION['cart'][$location][2];
     }
-    for($a=0; $a < sizeof($_SESSION['cart']); $a++) {
-        echo "Item id: " . $_SESSION['cart'][$a][0] . "</br>";
-        echo "Item name: " . $_SESSION['cart'][$a][1] . "</br>";
-        echo "Amount: " . $_SESSION['cart'][$a][2] . "</br>";
-        echo "Item price: " . $_SESSION['cart'][$a][3] . "</br>";
-        echo "Total price: " . $_SESSION['cart'][$a][4] . "</br>";
-        //break;
-    }
+    sleep(2);
+    header("Location: ../productpage.php?product=" . $row['itemname']);
+    // Keeping this as a list of where to find what in the session array:
+    // for($a=0; $a < sizeof($_SESSION['cart']); $a++) {
+    //     echo "Item id: " . $_SESSION['cart'][$a][0] . "</br>";
+    //     echo "Item name: " . $_SESSION['cart'][$a][1] . "</br>";
+    //     echo "Amount: " . $_SESSION['cart'][$a][2] . "</br>";
+    //     echo "Item price: " . $_SESSION['cart'][$a][3] . "</br>";
+    //     echo "Total price: " . $_SESSION['cart'][$a][4] . "</br>";
+    // }
 
 ?>

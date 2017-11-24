@@ -16,7 +16,6 @@
         echo "<div class=\"col-6 col-sm-6\">";
         echo "<h3 id=\"lblProductName\">" . $row['itemname'] . "</h3>";
         echo "</br>";
-        //echo "<p class=\"fadedGrey\">Item id: <span name=\"productId\" id=\"lblProductId\">" . $row['itemcode'] . "</span></p>";
         echo "<ul>";
         echo "<li>";
         echo "Producer: <span id=\"productOrigin\">" . $row['producer'] . "</span>";
@@ -37,7 +36,7 @@
         echo "kr <span id=\"productPrice\">" . $row['out_price'] . "</span> ,-";
         echo "</br>";
         echo "</br>";
-        echo "<form class=\"\" action=\"scripts/add_to_cart.php\" method=\"post\">";
+        echo "<form class=\"\" action=\"scripts/add_to_cart.php\" method=\"post\" onsubmit=\"return addToCart()\">";
         echo "<input type=\"hidden\" name=\"productId\" value=" . $row['itemcode'] . " />";
         echo "<p class=\"fadedGrey\">Item id: <label for=\"btnBuy\">" . $row['itemcode'] . "</label></p>";
     }

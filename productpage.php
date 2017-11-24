@@ -22,7 +22,7 @@
                         <button type="button" onclick="increaseBuyAmount();" class="upDown" name="btnIncrease" id="btnIncrease"><b>+</b></button>
                         </br>
                         </br>
-                        <button type="submit" class="btnBuy" name="btnBuy" id="btnBuy">Add to cart</button>
+                        <button type="submit" class="btnBuy" onclick="addToCart();" name="btnBuy" id="btnBuy">Add to cart</button>
                     </form>
                     </br>
                     </br>
