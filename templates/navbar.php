@@ -6,6 +6,9 @@
         <?php
           if (isset($_SESSION['id'])) {
             echo "Logged in as: ".$_SESSION['fname']." ".$_SESSION['lname'];
+            if($_SESSION['usergroup']==2){
+              echo ' (admin)';
+            }
           }
          ?>
       </div>

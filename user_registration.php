@@ -1,3 +1,6 @@
+<?php
+  session_start();
+ ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -31,6 +34,14 @@
           <br />
           <input type="password" name="pwd" placeholder="Password">
           <br />
+          <?php
+          if($_SESSION['usergroup']==2){
+            echo '
+            <input type="text" name="usergroup" placeholder="Usergroup">
+            <br />
+            ';
+          }
+           ?>
           <button type="submit">Register</button>
         </form>
       </div>
