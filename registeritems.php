@@ -1,3 +1,11 @@
+<?php
+
+session_start();
+if($_SESSION['usergroup'] != 2 || !isset($_SESSION['usergroup'])){
+  header("Location: index.php");
+}
+
+ ?>
 <!DOCTYPE html>
 <html>
   <head>

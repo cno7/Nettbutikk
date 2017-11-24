@@ -21,15 +21,23 @@
      <main class="container">
        <h3>Admin Controls</h3>
        <h4 class="mt-5">Add a user</h4>
-       <form class="form-group" action="user_registration.php">
-         <button class="btn btn-danger" type="submit">Add User</button>
-       </form>
+       <div class="col-4">
+         <form class="form-group" action="user_registration.php">
+           <button class="btn btn-danger" type="submit">Add User</button>
+         </form>
+       </div>
        <h4 class="mt-5">Remove a user</h4>
        <div class="col-4">
          <form class="form-group" action="scripts/remove_user.php" method="post">
            <label>Remove a user by user id</label>
            <input class="form-control" type="text" name="user_id" placeholder="User ID">
            <button class="btn btn-danger" type="submit">Remove user</button>
+         </form>
+       </div>
+       <h4 class="mt-5">Add an item</h4>
+       <div class="col-4">
+         <form class="form-group" action="registeritems.php">
+           <button class="btn btn-danger" type="submit">Register item</button>
          </form>
        </div>
      </main>
