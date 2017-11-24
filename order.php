@@ -9,7 +9,7 @@
   $result = mysqli_query($link, $sql);
   $currentOrder = mysqli_fetch_assoc($result);
 
-  if($currentorder['user_id']!=$_SESSION['id']){
+  if($currentOrder['user_id'] != $_SESSION['id'] && $_SESSION['usergroup'] == 1){
     header("Location: index.php");
   }
 
