@@ -21,7 +21,7 @@ session_start();
           <h2>Highlights</h2>
           <div class="carousel-inner" role="listbox">
               <div class="carousel-item active">
-                <a href="productpage.php?product=eple">
+                <a href="productpage.php?product=apple">
                   <img class="d-block img-fluid carousel1" src="images/product_placeholder.jpg" alt="Eple" />
                   <div class="carousel-caption">
                     <h4>Apple</h4>
@@ -30,7 +30,7 @@ session_start();
                 </a>
               </div>
             <div class="carousel-item">
-              <a href="productpage.php?product=appelsin">
+              <a href="productpage.php?product=orange">
                 <img class="d-block img-fluid carousel1" src="images/orange_placeholder.jpg" alt="Appelsin" />
                 <div class="carousel-caption">
                   <h4>Orange</h4>
@@ -39,7 +39,7 @@ session_start();
               </a>
             </div>
             <div class="carousel-item">
-              <a href="productpage.php?product=pære">
+              <a href="productpage.php?product=pear">
                 <img class="d-block img-fluid carousel1" src="images/pear_placeholder.jpg" alt="Pære" />
                 <div class="carousel-caption">
                   <h4>Pear</h4>
@@ -48,7 +48,7 @@ session_start();
               </a>
             </div>
             <div class="carousel-item">
-              <a href="productpage.php?product=banan">
+              <a href="productpage.php?product=banana">
                 <img class="d-block img-fluid carousel1" src="images/banana_placeholder.jpg" alt="Banan" />
                 <div class="carousel-caption">
                   <h4>Banana</h4>
