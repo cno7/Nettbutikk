@@ -14,7 +14,7 @@ for ($i=0; $i < sizeof($_SESSION['cart']); $i++) {
   $total+=$_SESSION['cart'][$i][4];
   $itemcode=$_SESSION['cart'][$i][0];
   $new_quantity=$_SESSION['cart'][$i][2];;
-  $sqli = "UPDATE items SET quantity = `quantity`-$new_quantity WHERE itemcode='$itemcode'";
+  $sqli = "UPDATE items SET quantity = `quantity`-$new_quantity, numbers_sold = `numbers_sold`+$new_quantity WHERE itemcode='$itemcode'";
   $result = mysqli_query($link, $sqli);
   array_push($item_array, implode($_SESSION['cart'][$i], "$"));
 }
