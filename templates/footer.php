@@ -6,16 +6,16 @@
       </div>
       <div class="col-lg-3 col-xs-3">
         <ul class="" style="list-style-type:none">
-          <li><h3>SNARVEIER</h3></li>
-          <li><a href="user.php">Min side</a></li>
-          <li><a href="user.php">Ordre</a></li>
+          <li><h3>Shortcuts</h3></li>
+          <li><a href="user.php">My page</a></li>
+          <li><a href="user.php">Orders</a></li>
           <li><a href="#">Blabla</a></li>
           <li><a href="#">Blabla</a></li>
         </ul>
       </div>
       <div class="col-lg-3 col-xs-3">
         <ul class="" style="list-style-type:none">
-          <li><h3>INFORMASJON</h3></li>
+          <li><h3>INFO</h3></li>
           <li><a href="#">Blabla</a></li>
           <li><a href="#">Blabla</a></li>
           <li><a href="#">Blabla</a></li>

@@ -24,8 +24,8 @@ session_start();
                 <a href="productpage.php?product=eple">
                   <img class="d-block img-fluid carousel1" src="images/product_placeholder.jpg" alt="Eple" />
                   <div class="carousel-caption">
-                    <h4>Eple</h4>
-                    <p>Supersøtt eple</p>
+                    <h4>Apple</h4>
+                    <p>The best apple</p>
                   </div>
                 </a>
               </div>
@@ -33,8 +33,8 @@ session_start();
               <a href="productpage.php?product=appelsin">
                 <img class="d-block img-fluid carousel1" src="images/orange_placeholder.jpg" alt="Appelsin" />
                 <div class="carousel-caption">
-                  <h4>Appelsin</h4>
-                  <p>Superorange appelsin</p>
+                  <h4>Orange</h4>
+                  <p>Superorange orange</p>
                 </div>
               </a>
             </div>
@@ -42,8 +42,8 @@ session_start();
               <a href="productpage.php?product=pære">
                 <img class="d-block img-fluid carousel1" src="images/pear_placeholder.jpg" alt="Pære" />
                 <div class="carousel-caption">
-                  <h4>Pære</h4>
-                  <p>Helt jævlig pære</p>
+                  <h4>Pear</h4>
+                  <p>Tasty pear</p>
                 </div>
               </a>
             </div>
@@ -51,8 +51,8 @@ session_start();
               <a href="productpage.php?product=banan">
                 <img class="d-block img-fluid carousel1" src="images/banana_placeholder.jpg" alt="Banan" />
                 <div class="carousel-caption">
-                  <h4>Banan</h4>
-                  <p>Gul banan</p>
+                  <h4>Banana</h4>
+                  <p>Yellow banana</p>
                 </div>
               </a>
             </div>
