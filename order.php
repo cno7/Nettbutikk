@@ -74,7 +74,7 @@
               <h6 class="text-truncate">'.$items[$a][1].'</h6>
               <p class="products-description text-truncate">'.$item_info[$a]['description'].'</p>
             </div>
-            <div class="col-2 col-sm-2 col-md-1">'.$items[$a][2].'$</div>
+            <div class="col-2 col-sm-2 col-md-1">'.$items[$a][2].',-</div>
             <div class="col-2 col-sm-2 col-md-1">
               '.$items[$a][3].',-
             </div>
