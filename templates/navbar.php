@@ -123,7 +123,7 @@
           <div class="dropdown-menu" id="prodDropdown">
             <a class="dropdown-item" href="productlist.php?type=Fruit">Fruit</a>
             <a class="dropdown-item" href="productlist.php?type=Candy">Candy</a>
-            <a class="dropdown-item" href="productlist.php?type=Vegetables">Vegetables</a>
+            <a class="dropdown-item" href="productlist.php?type=Vegetable">Vegetables</a>
             <a class="dropdown-item" href="productlist.php?type=Milk">Milk</a>
           </div>
         </div>
