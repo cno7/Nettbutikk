@@ -77,98 +77,43 @@ session_start();
           <div class="col-12 items-wrapper">
             <div class="row">
               <!-- item -->
+              <?php
+              $products=array();
+              $sql="SELECT * FROM items WHERE type='fruit' LIMIT 4";
+              $result = mysqli_query($link, $sql);
+              while ($row = mysqli_fetch_assoc($result)) {
+                  array_push($products, $row);
+              }
+              for ($i=0; $i < 4 ; $i++) {
+                  echo
+                  '
               <div class="col-3 item-container">
                 <div class="item">
                   <a class="image-container" href="#">
                     <div class="image-wrapper">
-                      <img class="image" src="images/product_placeholder.jpg" alt="product" />
+                      <img class="image" src="images/'.$products[$i]['picture_name'].'" />
                     </div>
                   </a>
                   <div class="content-block">
                     <a class="text-container" href="#">
                       <div class="text-content">
-                        <h4>Eple</h4>
-                        <p>Lorem ipsum</p>
+                        <h4>'.$products[$i]['itemname'].'</h4>
+                        <p>'.$products[$i]['description'].'</p>
                       </div>
                     </a>
                     <div class="box-bottom">
                       <div class="price-wrapper">
-                        <span class="text-align-right">10,-</span>
+                        <span class="text-align-right">'.$products[$i]['out_price'].'</span>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <!-- item -->
-              <div class="col-3 item-container">
-                <div class="item">
-                  <a class="image-container" href="#">
-                    <div class="image-wrapper">
-                      <img class="image" src="images/product_placeholder.jpg" alt="product" />
-                    </div>
-                  </a>
-                  <div class="content-block">
-                    <a class="text-container" href="#">
-                      <div class="text-content">
-                        <h4>Eple</h4>
-                        <p>Lorem ipsum</p>
-                      </div>
-                    </a>
-                    <div class="box-bottom">
-                      <div class="price-wrapper">
-                        <span class="text-align-right">10,-</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-3 item-container">
-                <div class="item">
-                  <a class="image-container" href="#">
-                    <div class="image-wrapper">
-                      <img class="image" src="images/product_placeholder.jpg" alt="product" />
-                    </div>
-                  </a>
-                  <div class="content-block">
-                    <a class="text-container" href="#">
-                      <div class="text-content">
-                        <h4>Eple</h4>
-                        <p>Lorem ipsum</p>
-                      </div>
-                    </a>
-                    <div class="box-bottom">
-                      <div class="price-wrapper">
-                        <span class="text-align-right">10,-</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-3 item-container">
-                <div class="item">
-                  <a class="image-container" href="#">
-                    <div class="image-wrapper">
-                      <img class="image" src="images/product_placeholder.jpg" alt="product" />
-                    </div>
-                  </a>
-                  <div class="content-block">
-                    <a class="text-container" href="#">
-                      <div class="text-content">
-                        <h4>Eple</h4>
-                        <p>Lorem ipsum</p>
-                      </div>
-                    </a>
-                    <div class="box-bottom">
-                      <div class="price-wrapper">
-                        <span class="text-align-right">10,-</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
+              ';
+            }
+              ?>
+          </div>
+      </div>
         <!-- End of first row -->
         <div class="container-fluid text-center mt-4">
           <a href="productlist.php?type=Candy" class="title-container">
@@ -180,97 +125,41 @@ session_start();
           <div class="col-12 items-wrapper">
             <div class="row">
               <!-- item -->
+              <?php
+              $products=array();
+              $sql="SELECT * FROM items WHERE type='candy' LIMIT 4";
+              $result = mysqli_query($link, $sql);
+              while ($row = mysqli_fetch_assoc($result)) {
+                  array_push($products, $row);
+              }
+              for ($i=0; $i < 4 ; $i++) {
+                  echo
+                  '
               <div class="col-3 item-container">
                 <div class="item">
                   <a class="image-container" href="#">
                     <div class="image-wrapper">
-                      <img class="image" src="images/product_placeholder.jpg" alt="product" />
+                      <img class="image" src="images/'.$products[$i]['picture_name'].'" />
                     </div>
                   </a>
                   <div class="content-block">
                     <a class="text-container" href="#">
                       <div class="text-content">
-                        <h4>Eple</h4>
-                        <p>Lorem ipsum</p>
+                        <h4>'.$products[$i]['itemname'].'</h4>
+                        <p>'.$products[$i]['description'].'</p>
                       </div>
                     </a>
                     <div class="box-bottom">
                       <div class="price-wrapper">
-                        <span class="text-align-right">10,-</span>
+                        <span class="text-align-right">'.$products[$i]['out_price'].'</span>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <!-- item -->
-              <div class="col-3 item-container">
-                <div class="item">
-                  <a class="image-container" href="#">
-                    <div class="image-wrapper">
-                      <img class="image" src="images/product_placeholder.jpg" alt="product" />
-                    </div>
-                  </a>
-                  <div class="content-block">
-                    <a class="text-container" href="#">
-                      <div class="text-content">
-                        <h4>Eple</h4>
-                        <p>Lorem ipsum</p>
-                      </div>
-                    </a>
-                    <div class="box-bottom">
-                      <div class="price-wrapper">
-                        <span class="text-align-right">10,-</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-3 item-container">
-                <div class="item">
-                  <a class="image-container" href="#">
-                    <div class="image-wrapper">
-                      <img class="image" src="images/product_placeholder.jpg" alt="product" />
-                    </div>
-                  </a>
-                  <div class="content-block">
-                    <a class="text-container" href="#">
-                      <div class="text-content">
-                        <h4>Eple</h4>
-                        <p>Lorem ipsum</p>
-                      </div>
-                    </a>
-                    <div class="box-bottom">
-                      <div class="price-wrapper">
-                        <span class="text-align-right">10,-</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-3 item-container">
-                <div class="item">
-                  <a class="image-container" href="#">
-                    <div class="image-wrapper">
-                      <img class="image" src="images/product_placeholder.jpg" alt="product" />
-                    </div>
-                  </a>
-                  <div class="content-block">
-                    <a class="text-container" href="#">
-                      <div class="text-content">
-                        <h4>Eple</h4>
-                        <p>Lorem ipsum</p>
-                      </div>
-                    </a>
-                    <div class="box-bottom">
-                      <div class="price-wrapper">
-                        <span class="text-align-right">10,-</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              ';
+            }
+              ?>
             </div>
           </div>
         </div>
@@ -285,97 +174,41 @@ session_start();
           <div class="col-12 items-wrapper">
             <div class="row">
               <!-- item -->
+              <?php
+              $products=array();
+              $sql="SELECT * FROM items WHERE type='vegetable' LIMIT 4";
+              $result = mysqli_query($link, $sql);
+              while ($row = mysqli_fetch_assoc($result)) {
+                  array_push($products, $row);
+              }
+              for ($i=0; $i < 4 ; $i++) {
+                  echo
+                  '
               <div class="col-3 item-container">
                 <div class="item">
                   <a class="image-container" href="#">
                     <div class="image-wrapper">
-                      <img class="image" src="images/product_placeholder.jpg" alt="product" />
+                      <img class="image" src="images/'.$products[$i]['picture_name'].'" />
                     </div>
                   </a>
                   <div class="content-block">
                     <a class="text-container" href="#">
                       <div class="text-content">
-                        <h4>Eple</h4>
-                        <p>Lorem ipsum</p>
+                        <h4>'.$products[$i]['itemname'].'</h4>
+                        <p>'.$products[$i]['description'].'</p>
                       </div>
                     </a>
                     <div class="box-bottom">
                       <div class="price-wrapper">
-                        <span class="text-align-right">10,-</span>
+                        <span class="text-align-right">'.$products[$i]['out_price'].'</span>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <!-- item -->
-              <div class="col-3 item-container">
-                <div class="item">
-                  <a class="image-container" href="#">
-                    <div class="image-wrapper">
-                      <img class="image" src="images/product_placeholder.jpg" alt="product" />
-                    </div>
-                  </a>
-                  <div class="content-block">
-                    <a class="text-container" href="#">
-                      <div class="text-content">
-                        <h4>Eple</h4>
-                        <p>Lorem ipsum</p>
-                      </div>
-                    </a>
-                    <div class="box-bottom">
-                      <div class="price-wrapper">
-                        <span class="text-align-right">10,-</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-3 item-container">
-                <div class="item">
-                  <a class="image-container" href="#">
-                    <div class="image-wrapper">
-                      <img class="image" src="images/product_placeholder.jpg" alt="product" />
-                    </div>
-                  </a>
-                  <div class="content-block">
-                    <a class="text-container" href="#">
-                      <div class="text-content">
-                        <h4>Eple</h4>
-                        <p>Lorem ipsum</p>
-                      </div>
-                    </a>
-                    <div class="box-bottom">
-                      <div class="price-wrapper">
-                        <span class="text-align-right">10,-</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-3 item-container">
-                <div class="item">
-                  <a class="image-container" href="#">
-                    <div class="image-wrapper">
-                      <img class="image" src="images/product_placeholder.jpg" alt="product" />
-                    </div>
-                  </a>
-                  <div class="content-block">
-                    <a class="text-container" href="#">
-                      <div class="text-content">
-                        <h4>Eple</h4>
-                        <p>Lorem ipsum</p>
-                      </div>
-                    </a>
-                    <div class="box-bottom">
-                      <div class="price-wrapper">
-                        <span class="text-align-right">10,-</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              ';
+            }
+              ?>
             </div>
           </div>
         </div>
@@ -396,7 +229,7 @@ session_start();
               <!-- item -->
               <?php
               $products=array();
-              $sql="SELECT * FROM items WHERE type='candy'";
+              $sql="SELECT * FROM items WHERE type='milk' LIMIT 4";
               $result = mysqli_query($link, $sql);
               while ($row = mysqli_fetch_assoc($result)) {
                   array_push($products, $row);
