@@ -35,7 +35,7 @@
           <input type="password" name="pwd" placeholder="Password">
           <br />
           <?php
-          if($_SESSION['usergroup']==2){
+          if(isset($_SESSION['usergroup']) && $_SESSION['usergroup']==2){
             echo '
             <input type="text" name="usergroup" placeholder="Usergroup">
             <br />
