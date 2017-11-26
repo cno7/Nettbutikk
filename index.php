@@ -89,7 +89,7 @@ session_start();
                   '
               <div class="col-3 item-container">
                 <div class="item">
-                  <a class="image-container" href="#">
+                  <a class="image-container" href="productpage.php?product='.$products[$i]['itemname'].'">
                     <div class="image-wrapper">
                       <img class="image" src="images/'.$products[$i]['picture_name'].'" />
                     </div>
@@ -103,7 +103,7 @@ session_start();
                     </a>
                     <div class="box-bottom">
                       <div class="price-wrapper">
-                        <span class="text-align-right">'.$products[$i]['out_price'].'</span>
+                        <span class="text-align-right">'.$products[$i]['out_price'].' kr</span>
                       </div>
                     </div>
                   </div>
@@ -137,7 +137,7 @@ session_start();
                   '
               <div class="col-3 item-container">
                 <div class="item">
-                  <a class="image-container" href="#">
+                  <a class="image-container" href="productpage.php?product='.$products[$i]['itemname'].'">
                     <div class="image-wrapper">
                       <img class="image" src="images/'.$products[$i]['picture_name'].'" />
                     </div>
@@ -151,7 +151,7 @@ session_start();
                     </a>
                     <div class="box-bottom">
                       <div class="price-wrapper">
-                        <span class="text-align-right">'.$products[$i]['out_price'].'</span>
+                        <span class="text-align-right">'.$products[$i]['out_price'].' kr</span>
                       </div>
                     </div>
                   </div>
@@ -186,7 +186,7 @@ session_start();
                   '
               <div class="col-3 item-container">
                 <div class="item">
-                  <a class="image-container" href="#">
+                  <a class="image-container" href="productpage.php?product='.$products[$i]['itemname'].'">
                     <div class="image-wrapper">
                       <img class="image" src="images/'.$products[$i]['picture_name'].'" />
                     </div>
@@ -200,7 +200,7 @@ session_start();
                     </a>
                     <div class="box-bottom">
                       <div class="price-wrapper">
-                        <span class="text-align-right">'.$products[$i]['out_price'].'</span>
+                        <span class="text-align-right">'.$products[$i]['out_price'].' kr</span>
                       </div>
                     </div>
                   </div>
@@ -239,7 +239,7 @@ session_start();
                   '
               <div class="col-3 item-container">
                 <div class="item">
-                  <a class="image-container" href="#">
+                  <a class="image-container" href="productpage.php?product='.$products[$i]['itemname'].'">
                     <div class="image-wrapper">
                       <img class="image" src="images/'.$products[$i]['picture_name'].'" />
                     </div>
@@ -253,7 +253,7 @@ session_start();
                     </a>
                     <div class="box-bottom">
                       <div class="price-wrapper">
-                        <span class="text-align-right">'.$products[$i]['out_price'].'</span>
+                        <span class="text-align-right">'.$products[$i]['out_price'].' kr</span>
                       </div>
                     </div>
                   </div>
