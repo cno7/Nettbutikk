@@ -76,10 +76,10 @@
             </div>
             <div class="col-2 col-sm-2 col-md-1">'.$items[$a][2].'$</div>
             <div class="col-2 col-sm-2 col-md-1">
-              '.$items[$a][3].'$
+              '.$items[$a][3].',-
             </div>
             <div class="col-2 col-sm-2 col-md-1">
-              '.$items[$a][4].'$
+              '.$items[$a][4].',-
             </div>
           </div>
         </div>';
@@ -99,7 +99,7 @@
           <div class="col-2 col-sm-2 col-md-1">
           </div>
           <div class="col-2 col-sm-2 col-md-1">
-            <h5><?php echo $currentOrder['total_price']; ?>$</h5>
+            <h5><?php echo $currentOrder['total_price']; ?>,-</h5>
           </div>
         </div>
       </div>

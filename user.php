@@ -58,7 +58,7 @@
               for ($i=0; $i < sizeof($orders) ; $i++) {
                 echo '
                 <li class="order-item nav-item mt-1">
-                  <a class="nav-link" href="order.php?id='.$orders[$i]['order_id'].'">Orderno: '.$orders[$i]['order_id'].' &emsp; Date: '.$orders[$i]['date'].' &emsp; Price: '.$orders[$i]['total_price'].'$</a>
+                  <a class="nav-link" href="order.php?id='.$orders[$i]['order_id'].'">Orderno: '.$orders[$i]['order_id'].' &emsp; Date: '.$orders[$i]['date'].' &emsp; Price: '.$orders[$i]['total_price'].',-</a>
                 </li>';
               }
              ?>

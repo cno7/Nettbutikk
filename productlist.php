@@ -94,7 +94,7 @@ while ($row = mysqli_fetch_assoc($result)) {
               </a>
               </div>
               <div class="col-4 col-sm-4 col-md-2 float-right">
-                <h4>'.$products[$i]['out_price'].'$</h4>
+                <h4>'.$products[$i]['out_price'].',-</h4>
                 <form action="scripts/add_to_cart.php" method="post">
                   <input type="number" name="inpBuyAmount" value="1" class="form-control form-control-sm col-8 col-sm-6 col-lg-4" />
                   <input type="hidden" name="productId" value="'.$products[$i]['itemcode'].'"/>
