@@ -7,8 +7,8 @@
       <div class="col-lg-3 col-xs-3">
         <ul class="" style="list-style-type:none">
           <li><h3>SNARVEIER</h3></li>
-          <li><a href="#">Min side</a></li>
-          <li><a href="#">Ordre</a></li>
+          <li><a href="user.php">Min side</a></li>
+          <li><a href="user.php">Ordre</a></li>
           <li><a href="#">Blabla</a></li>
           <li><a href="#">Blabla</a></li>
         </ul>
