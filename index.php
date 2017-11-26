@@ -95,7 +95,7 @@ session_start();
                     </div>
                   </a>
                   <div class="content-block">
-                    <a class="text-container" href="#">
+                    <a class="text-container" href="productpage.php?product='.$products[$i]['itemname'].'">
                       <div class="text-content">
                         <h4>'.$products[$i]['itemname'].'</h4>
                         <p>'.$products[$i]['description'].'</p>
@@ -143,7 +143,7 @@ session_start();
                     </div>
                   </a>
                   <div class="content-block">
-                    <a class="text-container" href="#">
+                    <a class="text-container" href="productpage.php?product='.$products[$i]['itemname'].'">
                       <div class="text-content">
                         <h4>'.$products[$i]['itemname'].'</h4>
                         <p>'.$products[$i]['description'].'</p>
@@ -192,7 +192,7 @@ session_start();
                     </div>
                   </a>
                   <div class="content-block">
-                    <a class="text-container" href="#">
+                    <a class="text-container" href="productpage.php?product='.$products[$i]['itemname'].'">
                       <div class="text-content">
                         <h4>'.$products[$i]['itemname'].'</h4>
                         <p>'.$products[$i]['description'].'</p>
@@ -245,7 +245,7 @@ session_start();
                     </div>
                   </a>
                   <div class="content-block">
-                    <a class="text-container" href="#">
+                    <a class="text-container" href="productpage.php?product='.$products[$i]['itemname'].'">
                       <div class="text-content">
                         <h4>'.$products[$i]['itemname'].'</h4>
                         <p>'.$products[$i]['description'].'</p>
