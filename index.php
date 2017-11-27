@@ -76,7 +76,7 @@ session_start();
         <div class="container-fluid">
           <div class="col-12 items-wrapper">
             <div class="row">
-              <!-- item -->
+              <!-- getting items for the row -->
               <?php
               $products=array();
               $sql="SELECT * FROM items WHERE type='fruit' LIMIT 4";
@@ -124,7 +124,7 @@ session_start();
         <div class="container-fluid">
           <div class="col-12 items-wrapper">
             <div class="row">
-              <!-- item -->
+              <!-- getting items for the row -->
               <?php
               $products=array();
               $sql="SELECT * FROM items WHERE type='candy' LIMIT 4";
@@ -173,7 +173,7 @@ session_start();
         <div class="container-fluid">
           <div class="col-12 items-wrapper">
             <div class="row">
-              <!-- item -->
+              <!-- getting items for the row -->
               <?php
               $products=array();
               $sql="SELECT * FROM items WHERE type='vegetable' LIMIT 4";
@@ -226,7 +226,7 @@ session_start();
 
           <div class="col-12 items-wrapper">
             <div class="row">
-              <!-- item -->
+              <!--getting items for the row -->
               <?php
               $products=array();
               $sql="SELECT * FROM items WHERE type='milk' LIMIT 4";
