@@ -76,7 +76,7 @@
         <div class="navbar-nav ml-auto d-block d-md-none">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="test.php">Cart</a>
+              <a class="nav-link" href="cart.php">Cart</a>
             </li>
             <?php
             if(isset($_SESSION['email'])){
@@ -176,7 +176,7 @@
         <a class="nav-link" href="productlist.php?type=Candy">Candy</a>
       </li>
       <li class="nav-item nav-prod">
-        <a class="nav-link" href="productlist.php?type=Vegetables">Vegetables</a>
+        <a class="nav-link" href="productlist.php?type=Vegetable">Vegetables</a>
       </li>
       <li class="nav-item nav-prod">
         <a class="nav-link" href="productlist.php?type=Milk">Milk</a>
