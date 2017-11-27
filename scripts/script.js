@@ -5,7 +5,6 @@ function decreaseBuyAmount() {
         var decrease = document.getElementById("inpBuyAmount").value;
         decrease--;
         document.getElementById("inpBuyAmount").value = decrease;
-        console.log(document.getElementById("inpBuyAmount").value);
     }
 }
 function increaseBuyAmount() {
@@ -13,7 +12,6 @@ function increaseBuyAmount() {
         var increase = document.getElementById("inpBuyAmount").value;
         increase++;
         document.getElementById("inpBuyAmount").value = increase;
-        console.log(document.getElementById("inpBuyAmount").value);
     }
 }
 function addToCart() {

@@ -8,7 +8,6 @@
     $result = mysqli_query($link, $sql);
     if(!$row = mysqli_fetch_assoc($result)){
       echo "<h1>ERROR: Product not found!</h1>";
-      //header("Location: ../productpage.php");
     }
     else{
         echo "<img alt=\"Responsive image\" class=\"img-responsive center-block imgProduct\" src=\"images/" . $row['picture_name'] . "\" />";
