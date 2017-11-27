@@ -7,14 +7,14 @@
 
     $result = mysqli_query($link, $sql);
     if(!$row = mysqli_fetch_assoc($result)){
-      $_SESSION['error']= "Product not found";
-      header("Location: ../produktside.php");
+      echo "<h1>ERROR: Product not found!</h1>";
     }
     else{
         echo "<img alt=\"Responsive image\" class=\"img-responsive center-block imgProduct\" src=\"images/" . $row['picture_name'] . "\" />";
         echo "</div>";
         echo "<div class=\"col-6 col-sm-6\">";
         echo "<h3 id=\"lblProductName\">" . $row['itemname'] . "</h3>";
+        echo "</br>";
         echo "<ul>";
         echo "<li>";
         echo "Producer: <span id=\"productOrigin\">" . $row['producer'] . "</span>";
@@ -33,6 +33,11 @@
         echo "<div class=\"col-2 col-sm-2 priceField\">";
         echo "<h5>Price:</h5>";
         echo "kr <span id=\"productPrice\">" . $row['out_price'] . "</span> ,-";
+        echo "</br>";
+        echo "</br>";
+        echo "<form class=\"\" action=\"scripts/add_to_cart.php\" method=\"post\" onsubmit=\"return addToCart()\">";
+        echo "<input type=\"hidden\" name=\"productId\" value=" . $row['itemcode'] . " />";
+        echo "<p class=\"fadedGrey\">Item id: <label for=\"btnBuy\">" . $row['itemcode'] . "</label></p>";
     }
 
  ?>

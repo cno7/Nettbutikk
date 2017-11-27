@@ -79,19 +79,25 @@ while ($row = mysqli_fetch_assoc($result)) {
           '
           <div class="container products-row py-2">
             <div class="row">
-              <div class="col-4 col-sm-3 col-md-2 pr-0 pr-sm-1">
-                <img src="images/'.$products[$i]['picture_name'].'" class="img-thumbnail img-products">
+              <div class="col-8 col-md-10">
+                <a href="productpage.php?product='.$products[$i]['itemname'].'" class="prod-link">
+                  <div class="row">
+                  <div class="col-6 col-sm-5 col-md-2 pr-0 pr-sm-1">
+                    <img src="images/'.$products[$i]['picture_name'].'" class="img-thumbnail img-products">
+                  </div>
+                  <div class="col-6 col-sm-7 col-md-10 pl-0 pl-sm-1">
+                    <h3>'.$products[$i]['itemname'].'</h3>
+                    <p class="products-description text-truncate">'.$products[$i]['description'].'</p>
+                    <p>Stock: '.$products[$i]['quantity'].'</p>
+                  </div>
+                </div>
+              </a>
               </div>
-              <div class="col-4 col-sm-5 col-md-8 pl-0 pl-sm-1">
-                <h3>'.$products[$i]['itemname'].'</h3>
-                <p class="products-description text-truncate">'.$products[$i]['description'].'</p>
-                <p>Stock: '.$products[$i]['quantity'].'</p>
-              </div>
-              <div class="col-4 col-sm-4 col-md-2">
-                <h4>'.$products[$i]['out_price'].'$</h4>
-                <form action="#" method="post">
-                  <input type="number" name="quantity" value="1" class="form-control form-control-sm col-8 col-sm-6 col-lg-4" />
-                  <input type="hidden" name="itemcode" value="'.$products[$i]['picture_name'].'">
+              <div class="col-4 col-sm-4 col-md-2 float-right">
+                <h4>'.$products[$i]['out_price'].',-</h4>
+                <form action="scripts/add_to_cart.php" method="post">
+                  <input type="number" name="inpBuyAmount" value="1" class="form-control form-control-sm col-8 col-sm-6 col-lg-4" />
+                  <input type="hidden" name="productId" value="'.$products[$i]['itemcode'].'"/>
                   <button type="submit" class="btn btn-danger mt-2 btn-sm p-1 py-sm-1 px-sm-2">Add to cart</button>
                 </form>
               </div>
@@ -100,6 +106,7 @@ while ($row = mysqli_fetch_assoc($result)) {
           ';
         }
          ?>
+
     </main>
 
     <!--Scripts-->

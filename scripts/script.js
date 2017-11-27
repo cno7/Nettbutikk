@@ -5,7 +5,6 @@ function decreaseBuyAmount() {
         var decrease = document.getElementById("inpBuyAmount").value;
         decrease--;
         document.getElementById("inpBuyAmount").value = decrease;
-        console.log(document.getElementById("inpBuyAmount").value);
     }
 }
 function increaseBuyAmount() {
@@ -13,20 +12,19 @@ function increaseBuyAmount() {
         var increase = document.getElementById("inpBuyAmount").value;
         increase++;
         document.getElementById("inpBuyAmount").value = increase;
-        console.log(document.getElementById("inpBuyAmount").value);
     }
 }
 function addToCart() {
     var amount = document.getElementById("inpBuyAmount").value;
 
     if(amount == 1) {
-        document.getElementById("addedToCart").innerHTML = amount + " item added to cart!"
+        document.getElementById("addedToCart").innerHTML = amount + " item added to cart!";
+        setTimeout(function(){document.getElementById("addedToCart").innerHTML = "&nbsp;"}, 5000);
     }
     if(amount > 1) {
-        document.getElementById("addedToCart").innerHTML = amount + " items added to cart!"
+        document.getElementById("addedToCart").innerHTML = amount + " items added to cart!";
+        setTimeout(function(){document.getElementById("addedToCart").innerHTML = "&nbsp;"}, 5000);
     }
-    setTimeout(function(){document.getElementById("addedToCart").innerHTML = "&nbsp;"}, 5000);
-    console.log(amount);
 }
 function openTab(evt, tabName) {
   var i, tabcontent, tablinks;

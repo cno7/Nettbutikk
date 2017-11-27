@@ -1,3 +1,11 @@
+<?php
+
+session_start();
+if($_SESSION['usergroup'] != 2 || !isset($_SESSION['usergroup'])){
+  header("Location: index.php");
+}
+
+ ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,7 +15,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
     <!-- Custom ccs and javascript. NOT a part of bootstrap -->
-    <!--<link rel="stylesheet" type="text/css" href="css/style.css" />-->
     <link rel="stylesheet" href="css/master.css">
     <title>Nettbutikk</title>
   </head>

@@ -67,6 +67,7 @@ main{
 
 .products-row{
   background-color: #f4f4f4;
+  color:black;
 }
 
 .products-row:hover{
@@ -75,12 +76,6 @@ main{
 
 .products-description{
   font-size: 14px;
-}
-
-.carousel1{
-  width: 100%;
-  height: 400px;
-  object-fit: contain;
 }
 
 .img-thumbnail{
@@ -117,11 +112,56 @@ main{
   text-align: left;
 }
 
-.inputField{
-    display: inline-block;
-    width: 170px;
-    padding-bottom: 3px;
+.carousel-control{
+  padding-top:10%;
+  width:5%;
 }
+
+.carousel1{
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+}
+
+.items-wrapper{
+  padding-top: 30px;
+  align-items: center;
+  border-top: 1px solid;
+}
+
+.item-container{
+  padding-left: 10px;
+}
+
+.text-container{
+  color: black;
+}
+
+.image{
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.item-container .item:hover{
+  background: #e1e1e1;
+  border: 1px solid #d0d0d0;
+}
+
+.carousel-caption{
+  color: black;
+}
+
+.prod-link{
+  text-decoration: none !important;
+  color:black;
+}
+
+.prod-link:hover{
+  text-decoration: none !important;
+  color:black;
+}
+
 /* ID's */
 
 #pageTitle{

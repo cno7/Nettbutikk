@@ -7,8 +7,7 @@
 
     $result = mysqli_query($link, $sql);
     if(!$row = mysqli_fetch_assoc($result)){
-      $_SESSION['error']= "Product not found";
-      header("Location: ../produktside.php");
+      echo "<h1>ERROR: Product not found!</h1>";
     }
     else{
         echo "<p>In stock: <span id=\"productStock\">" . $row['quantity'] . "</span> stk.</p>";
